@@ -388,7 +388,7 @@ const ConsultingWebsite = () => {
                     <h4 className="text-xl font-bold text-gray-900">CRM Operations & Analytics Manager - Electronic Arts</h4>
                     <p className="text-green-600 font-medium mb-2">2010 - 2013 (3 years)</p>
                     <p className="text-gray-600 mb-4">
-                      Led performance analytics for EA's digital marketing initiatives across EMEA region.
+                      Led performance analytics for EA&apos;s digital marketing initiatives across EMEA region.
                     </p>
                     <ul className="space-y-2 text-gray-600">
                       <li>• Increased user engagement by 40% through advanced segmentation and targeting</li>
