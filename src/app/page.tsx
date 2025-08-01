@@ -150,7 +150,7 @@ const ConsultingWebsite = () => {
               <p className="text-blue-600 font-medium">Senior Digital Leader & IT Consultant</p>
             </div>
             <div className="flex items-center space-x-4">
-              <a href="mailto:lerouxbaptiste@hotmail.com" className="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
+              <a href="mailto:bonjour@alpa-strategie.com" className="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
                 <Mail className="w-5 h-5 mr-2" />
                 <span className="hidden sm:inline">Contact</span>
               </a>
@@ -187,7 +187,7 @@ const ConsultingWebsite = () => {
               <span className="text-blue-600 font-semibold">50+ Team Members Led</span>
             </div>
           </div>
-          <a href="mailto:lerouxbaptiste@hotmail.com" className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg">
+          <a href="mailto:bonjour@alpa-strategie.com" className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg">
             Start Your Transformation
           </a>
         </div>
@@ -432,7 +432,7 @@ const ConsultingWebsite = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="mailto:lerouxbaptiste@hotmail.com" 
+              href="mailto:bonjour@alpa-strategie.com" 
               className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Schedule a Consultation
@@ -456,7 +456,7 @@ const ConsultingWebsite = () => {
               <p className="text-gray-400">Senior Digital Leader & IT Consultant</p>
             </div>
             <div className="flex items-center space-x-6">
-              <a href="mailto:lerouxbaptiste@hotmail.com" className="text-gray-400 hover:text-white transition-colors">
+              <a href="mailto:bonjour@alpa-strategie.com" className="text-gray-400 hover:text-white transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
               <a href="tel:+33778555980" className="text-gray-400 hover:text-white transition-colors">
