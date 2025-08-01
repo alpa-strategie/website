@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from 'react';
 import { ChevronDown, ChevronRight, Mail, Phone, Linkedin, Globe, Users, TrendingUp, Database, Cloud, Zap, Target } from 'lucide-react';
 
