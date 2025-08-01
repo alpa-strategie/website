@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { ChevronDown, ChevronRight, Mail, Phone, Linkedin, Globe, Users, TrendingUp, Database, Cloud, Zap, Target } from 'lucide-react';
 
 const ConsultingWebsite = () => {
-  const [expandedService, setExpandedService] = useState(null);
+  const [expandedService, setExpandedService] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState('overview');
 
   const services = [
