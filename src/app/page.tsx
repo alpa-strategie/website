@@ -258,16 +258,15 @@ const ConsultingWebsite = () => {
                   <li>• International project delivery</li>
                 </ul>
               </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-blue-600 mb-3">Technologies</h4>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Cloud Platforms (AWS, Azure, GCP)</li>
-                    <li>• Modern Web Frameworks (React, Node.js)</li>
-                    <li>• Enterprise Systems (Oracle, Microsoft, Linux)</li>
-                    <li>• BI Tools (OBIEE, Tableau, BusinessObjects)</li>
-                    <li>• CRM Platforms (HubSpot, AgileCRM)</li>
-                  </ul>
-                </div>
+              <div>
+                <h4 className="text-lg font-semibold text-blue-600 mb-3">Technologies</h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Cloud Platforms (AWS, Azure, GCP)</li>
+                  <li>• Modern Web Frameworks (React, Node.js)</li>
+                  <li>• Enterprise Systems (Oracle, Microsoft, Linux)</li>
+                  <li>• BI Tools (OBIEE, Tableau, BusinessObjects)</li>
+                  <li>• CRM Platforms (HubSpot, AgileCRM)</li>
+                </ul>
               </div>
             </div>
           </div>
