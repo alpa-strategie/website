@@ -1,0 +1,233 @@
+{
+    "header": {
+      "title": "Baptiste Leroux",
+      "subtitle": "IT Leadership & Global Delivery Consultant",
+      "contact": "Contact",
+      "linkedin": "LinkedIn"
+    },
+    "hero": {
+      "title": "Transform Your Digital Future",
+      "description": "20+ years of international expertise in digital transformation, from Oracle enterprise systems to founding a $5M+ software agency. I help organizations bridge enterprise governance with startup agility.",
+      "stat1": "100+ Projects Delivered",
+      "stat2": "10+ Countries",
+      "stat3": "$5M+ Revenue Generated",
+      "stat4": "50+ Team Members Led",
+      "cta": "Start Your Transformation"
+    },
+    "nav": {
+      "overview": "Overview",
+      "services": "Services",
+      "packages": "Starter Packages",
+      "experience": "Experience"
+    },
+    "overview": {
+      "title": "Why Choose Baptiste Leroux?",
+      "card1Title": "Proven Executive Leadership",
+      "card1Desc": "Scaled a software agency from 4 to 50 people with $5M+ P&L responsibility across 10+ countries.",
+      "card2Title": "Offshoring Expertise",
+      "card2Desc": "11 years building and managing 50-person offshore operations with proven cultural bridge expertise.",
+      "card3Title": "SaaS Product Leadership",
+      "card3Desc": "50+ SaaS solutions delivered across diverse industries with proven scaling and architecture expertise.",
+      "expertiseTitle": "Key Expertise Areas",
+      "saasTitle": "SaaS Expertise",
+      "techTitle": "Technologies",
+      "saasItems": [
+        "Industry-agnostic SaaS development",
+        "Multi-tenant architecture design",
+        "Global team scaling (4 to 50+ people)",
+        "Offshore development operations",
+        "International project delivery"
+      ],
+      "techItems": [
+        "Cloud Platforms (AWS, Azure, GCP)",
+        "Modern Web Frameworks (React, Node.js)",
+        "Enterprise Systems (Oracle, Microsoft, Linux)",
+        "BI Tools (OBIEE, Tableau, BusinessObjects)",
+        "CRM Platforms (HubSpot, AgileCRM)"
+      ]
+    },
+    "services": {
+      "title": "Consulting Services",
+      "servicesInclude": "Services Include:",
+      "uniqueValue": "Unique Value:",
+      "items": [
+        {
+          "id": "strategy",
+          "title": "Executive IT Strategy & Digital Transformation",
+          "rate": "€140-170/hour",
+          "description": "C-level technology strategy and digital transformation program design",
+          "details": [
+            "Technology strategy and roadmap development",
+            "Digital transformation program design and governance",
+            "Enterprise architecture assessment",
+            "Interim CTO/Technology Director services",
+            "Cross-functional team alignment"
+          ],
+          "value": "Proven executive leadership scaling from 4 to 50-person teams with $5M+ P&L responsibility"
+        },
+        {
+          "id": "delivery",
+          "title": "Global Software Delivery & Agile Transformation",
+          "rate": "€120-150/hour",
+          "description": "End-to-end delivery frameworks and international team management",
+          "details": [
+            "Agile/Scrum implementation and optimization",
+            "Remote team management frameworks",
+            "Project governance and KPI-driven performance",
+            "Offshore/nearshore vendor selection",
+            "Quality assurance strategies"
+          ],
+          "value": "11 years managing 100+ successful projects across 10+ countries"
+        },
+        {
+          "id": "data",
+          "title": "Business Intelligence & Data Strategy",
+          "rate": "€130-160/hour",
+          "description": "Enterprise data architecture and BI platform modernization",
+          "details": [
+            "Data governance framework (GDPR, CCPA)",
+            "BI platform modernization",
+            "Data warehouse architecture review",
+            "Advanced analytics and KPI frameworks",
+            "Real-time dashboard strategy"
+          ],
+          "value": "Deep expertise from banking to gaming with regulatory compliance experience"
+        },
+        {
+          "id": "crm",
+          "title": "CRM & Marketing Technology",
+          "rate": "€110-140/hour",
+          "description": "Sales process automation and marketing technology optimization",
+          "details": [
+            "CRM strategy (HubSpot, AgileCRM, Salesforce)",
+            "Sales process automation",
+            "Inbound marketing and SEO optimization",
+            "Campaign performance analytics",
+            "Marketing technology stack integration"
+          ],
+          "value": "4+ years scaling B2B sales from startup to $5M+ revenue"
+        },
+        {
+          "id": "cloud",
+          "title": "Cloud Architecture & Digital Platforms",
+          "rate": "€120-150/hour",
+          "description": "Cloud migration strategy and scalable platform architecture",
+          "details": [
+            "Cloud migration strategy (AWS, Azure, GCP)",
+            "Containerization and microservices",
+            "DevOps pipeline optimization",
+            "Security and compliance frameworks",
+            "Cost optimization strategies"
+          ],
+          "value": "Hands-on experience building cloud-native platforms at enterprise scale"
+        },
+        {
+          "id": "innovation",
+          "title": "Innovation & Product Strategy",
+          "rate": "€100-130/hour",
+          "description": "Product strategy development and innovation methodology",
+          "details": [
+            "Product strategy and roadmap development",
+            "MVP design and rapid prototyping",
+            "Market validation methodologies",
+            "Go-to-market strategy for tech products",
+            "Innovation lab setup"
+          ],
+          "value": "Proven track record building multiple products from concept to market"
+        }
+      ]
+    },
+    "packages": {
+      "title": "Starter Packages",
+      "subtitle": "Risk-reducing entry points to demonstrate value quickly",
+      "button": "Get Started",
+      "items": [
+        {
+          "title": "IT Leadership Assessment",
+          "duration": "3 days (24 hours)",
+          "price": "€3,000-4,000",
+          "features": [
+            "IT organization maturity evaluation",
+            "Technology stack and team capability analysis",
+            "Leadership structure optimization",
+            "Quick-win identification",
+            "Executive presentation and roadmap"
+          ]
+        },
+        {
+          "title": "Offshoring Strategy & Setup",
+          "duration": "5 days (40 hours)",
+          "price": "€4,500-6,000",
+          "features": [
+            "Build vs offshore decision framework",
+            "Vendor evaluation and selection process",
+            "Team setup and management framework",
+            "Risk mitigation and governance design",
+            "Implementation roadmap and success metrics"
+          ]
+        },
+        {
+          "title": "SaaS Product Strategy Sprint",
+          "duration": "4 days (32 hours)",
+          "price": "€3,500-4,500",
+          "features": [
+            "SaaS architecture assessment",
+            "Scaling bottlenecks identification",
+            "Technology stack optimization",
+            "Product development process audit",
+            "Growth and scaling roadmap"
+          ]
+        }
+      ]
+    },
+    "experience": {
+      "title": "Professional Experience",
+      "items": [
+        {
+          "company": "StarTechUp Inc.",
+          "role": "CEO & Founder",
+          "period": "2013 - 2024 (11 years)",
+          "description": "Built and scaled an international software development agency serving global clients across 10+ countries.",
+          "achievements": [
+            "Led 50-person engineering team with budget planning and performance tracking",
+            "Generated $5M+ revenue through 100+ digital solutions",
+            "Implemented governance frameworks for resource allocation and quality assurance",
+            "Managed business development, CRM strategy, and international client acquisition"
+          ]
+        },
+        {
+          "company": "Electronic Arts",
+          "role": "CRM Operations & Analytics Manager",
+          "period": "2010 - 2013 (3 years)",
+          "description": "Led performance analytics for EA's digital marketing initiatives across EMEA region.",
+          "achievements": [
+            "Increased user engagement by 40% through advanced segmentation and targeting",
+            "Analyzed multi-channel data from web, game telemetrics, and CRM systems",
+            "Achieved 30M+ monthly impressions across EMEA markets"
+          ]
+        },
+        {
+          "company": "Banque Cantonale Vaudoise",
+          "role": "Data Analyst",
+          "period": "2009 - 2010",
+          "description": "Designed enterprise reporting solutions for strategic decision-making in asset management and risk.",
+          "achievements": [
+            "Built functional data warehouse and multiple data marts",
+            "Developed 50+ interactive dashboards using BusinessObjects",
+            "Enhanced stock market risk analysis and regulatory reporting"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Transform Your Digital Strategy?",
+      "description": "Let's discuss how my 20+ years of international experience can accelerate your digital transformation journey.",
+      "consultation": "Schedule a Consultation",
+      "connect": "Connect on LinkedIn"
+    },
+    "footer": {
+      "title": "Baptiste Leroux",
+      "subtitle": "IT Leadership & Global Delivery Consultant",
+      "location": "Based in Paris, France • Available for projects across Europe"
+    }
+  }

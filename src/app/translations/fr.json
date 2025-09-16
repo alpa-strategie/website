@@ -1,0 +1,233 @@
+{
+    "header": {
+      "title": "Baptiste Leroux",
+      "subtitle": "Consultant en Leadership IT et Livraison Globale",
+      "contact": "Contact",
+      "linkedin": "LinkedIn"
+    },
+    "hero": {
+      "title": "Transformez Votre Avenir Numérique",
+      "description": "Plus de 20 ans d'expertise internationale en transformation numérique, des systèmes d'entreprise Oracle à la création d'une agence logicielle de 5M$+. J'aide les organisations à faire le pont entre la gouvernance d'entreprise et l'agilité startup.",
+      "stat1": "100+ Projets Livrés",
+      "stat2": "10+ Pays",
+      "stat3": "5M$+ de Revenus Générés",
+      "stat4": "50+ Membres d'Équipe Dirigés",
+      "cta": "Commencer Votre Transformation"
+    },
+    "nav": {
+      "overview": "Aperçu",
+      "services": "Services",
+      "packages": "Forfaits de Démarrage",
+      "experience": "Expérience"
+    },
+    "overview": {
+      "title": "Pourquoi Choisir Baptiste Leroux ?",
+      "card1Title": "Leadership Exécutif Prouvé",
+      "card1Desc": "Fait croître une agence logicielle de 4 à 50 personnes avec une responsabilité P&L de 5M$+ dans plus de 10 pays.",
+      "card2Title": "Expertise en Délocalisation",
+      "card2Desc": "11 ans de construction et gestion d'opérations offshore de 50 personnes avec une expertise prouvée de pont culturel.",
+      "card3Title": "Leadership Produit SaaS",
+      "card3Desc": "Plus de 50 solutions SaaS livrées dans diverses industries avec une expertise prouvée en mise à l'échelle et architecture.",
+      "expertiseTitle": "Domaines d'Expertise Clés",
+      "saasTitle": "Expertise SaaS",
+      "techTitle": "Technologies",
+      "saasItems": [
+        "Développement SaaS agnostique à l'industrie",
+        "Conception d'architecture multi-locataire",
+        "Mise à l'échelle d'équipe globale (4 à 50+ personnes)",
+        "Opérations de développement offshore",
+        "Livraison de projets internationaux"
+      ],
+      "techItems": [
+        "Plateformes Cloud (AWS, Azure, GCP)",
+        "Frameworks Web Modernes (React, Node.js)",
+        "Systèmes d'Entreprise (Oracle, Microsoft, Linux)",
+        "Outils BI (OBIEE, Tableau, BusinessObjects)",
+        "Plateformes CRM (HubSpot, AgileCRM)"
+      ]
+    },
+    "services": {
+      "title": "Services de Conseil",
+      "servicesInclude": "Services Inclus :",
+      "uniqueValue": "Valeur Unique :",
+      "items": [
+        {
+          "id": "strategy",
+          "title": "Stratégie IT Exécutive & Transformation Numérique",
+          "rate": "€140-170/heure",
+          "description": "Stratégie technologique de niveau C et conception de programme de transformation numérique",
+          "details": [
+            "Développement de stratégie technologique et feuille de route",
+            "Conception et gouvernance de programme de transformation numérique",
+            "Évaluation d'architecture d'entreprise",
+            "Services de CTO/Directeur Technologique intérimaire",
+            "Alignement d'équipes interfonctionnelles"
+          ],
+          "value": "Leadership exécutif prouvé avec mise à l'échelle d'équipes de 4 à 50 personnes et responsabilité P&L de 5M$+"
+        },
+        {
+          "id": "delivery",
+          "title": "Livraison Logicielle Globale & Transformation Agile",
+          "rate": "€120-150/heure",
+          "description": "Frameworks de livraison de bout en bout et gestion d'équipe internationale",
+          "details": [
+            "Implémentation et optimisation Agile/Scrum",
+            "Frameworks de gestion d'équipe à distance",
+            "Gouvernance de projet et performance basée sur KPI",
+            "Sélection de fournisseurs offshore/nearshore",
+            "Stratégies d'assurance qualité"
+          ],
+          "value": "11 ans de gestion de 100+ projets réussis dans plus de 10 pays"
+        },
+        {
+          "id": "data",
+          "title": "Intelligence d'Affaires & Stratégie de Données",
+          "rate": "€130-160/heure",
+          "description": "Architecture de données d'entreprise et modernisation de plateforme BI",
+          "details": [
+            "Framework de gouvernance des données (RGPD, CCPA)",
+            "Modernisation de plateforme BI",
+            "Révision d'architecture d'entrepôt de données",
+            "Frameworks d'analyses avancées et KPI",
+            "Stratégie de tableaux de bord en temps réel"
+          ],
+          "value": "Expertise approfondie du secteur bancaire au gaming avec expérience de conformité réglementaire"
+        },
+        {
+          "id": "crm",
+          "title": "CRM & Technologie Marketing",
+          "rate": "€110-140/heure",
+          "description": "Automatisation des processus de vente et optimisation technologique marketing",
+          "details": [
+            "Stratégie CRM (HubSpot, AgileCRM, Salesforce)",
+            "Automatisation des processus de vente",
+            "Marketing entrant et optimisation SEO",
+            "Analyses de performance des campagnes",
+            "Intégration de pile technologique marketing"
+          ],
+          "value": "4+ ans de mise à l'échelle des ventes B2B de startup à 5M$+ de revenus"
+        },
+        {
+          "id": "cloud",
+          "title": "Architecture Cloud & Plateformes Numériques",
+          "rate": "€120-150/heure",
+          "description": "Stratégie de migration cloud et architecture de plateforme évolutive",
+          "details": [
+            "Stratégie de migration cloud (AWS, Azure, GCP)",
+            "Conteneurisation et microservices",
+            "Optimisation de pipeline DevOps",
+            "Frameworks de sécurité et conformité",
+            "Stratégies d'optimisation des coûts"
+          ],
+          "value": "Expérience pratique de construction de plateformes cloud-native à l'échelle entreprise"
+        },
+        {
+          "id": "innovation",
+          "title": "Innovation & Stratégie Produit",
+          "rate": "€100-130/heure",
+          "description": "Développement de stratégie produit et méthodologie d'innovation",
+          "details": [
+            "Développement de stratégie produit et feuille de route",
+            "Conception MVP et prototypage rapide",
+            "Méthodologies de validation de marché",
+            "Stratégie de mise sur le marché pour produits tech",
+            "Configuration de laboratoire d'innovation"
+          ],
+          "value": "Historique prouvé de construction de multiples produits du concept au marché"
+        }
+      ]
+    },
+    "packages": {
+      "title": "Forfaits de Démarrage",
+      "subtitle": "Points d'entrée réducteurs de risque pour démontrer la valeur rapidement",
+      "button": "Commencer",
+      "items": [
+        {
+          "title": "Évaluation du Leadership IT",
+          "duration": "3 jours (24 heures)",
+          "price": "€3,000-4,000",
+          "features": [
+            "Évaluation de maturité de l'organisation IT",
+            "Analyse de pile technologique et capacités d'équipe",
+            "Optimisation de structure de leadership",
+            "Identification de gains rapides",
+            "Présentation exécutive et feuille de route"
+          ]
+        },
+        {
+          "title": "Stratégie & Configuration de Délocalisation",
+          "duration": "5 jours (40 heures)",
+          "price": "€4,500-6,000",
+          "features": [
+            "Framework de décision construire vs délocaliser",
+            "Processus d'évaluation et sélection de fournisseurs",
+            "Framework de configuration et gestion d'équipe",
+            "Conception d'atténuation des risques et gouvernance",
+            "Feuille de route d'implémentation et métriques de succès"
+          ]
+        },
+        {
+          "title": "Sprint Stratégie Produit SaaS",
+          "duration": "4 jours (32 heures)",
+          "price": "€3,500-4,500",
+          "features": [
+            "Évaluation d'architecture SaaS",
+            "Identification des goulots d'étranglement de mise à l'échelle",
+            "Optimisation de pile technologique",
+            "Audit de processus de développement produit",
+            "Feuille de route de croissance et mise à l'échelle"
+          ]
+        }
+      ]
+    },
+    "experience": {
+      "title": "Expérience Professionnelle",
+      "items": [
+        {
+          "company": "StarTechUp Inc.",
+          "role": "PDG & Fondateur",
+          "period": "2013 - 2024 (11 ans)",
+          "description": "Construit et mis à l'échelle une agence de développement logiciel internationale servant des clients mondiaux dans plus de 10 pays.",
+          "achievements": [
+            "Dirigé une équipe d'ingénierie de 50 personnes avec planification budgétaire et suivi de performance",
+            "Généré plus de 5M$ de revenus grâce à 100+ solutions numériques",
+            "Implémenté des frameworks de gouvernance pour l'allocation des ressources et l'assurance qualité",
+            "Géré le développement commercial, la stratégie CRM et l'acquisition de clients internationaux"
+          ]
+        },
+        {
+          "company": "Electronic Arts",
+          "role": "Gestionnaire Opérations CRM & Analyses",
+          "period": "2010 - 2013 (3 ans)",
+          "description": "Dirigé les analyses de performance pour les initiatives de marketing numérique d'EA dans la région EMEA.",
+          "achievements": [
+            "Augmenté l'engagement utilisateur de 40% grâce à la segmentation et au ciblage avancés",
+            "Analysé les données multi-canal du web, télémétrie de jeu et systèmes CRM",
+            "Atteint plus de 30M d'impressions mensuelles dans les marchés EMEA"
+          ]
+        },
+        {
+          "company": "Banque Cantonale Vaudoise",
+          "role": "Analyste de Données",
+          "period": "2009 - 2010",
+          "description": "Conçu des solutions de reporting d'entreprise pour la prise de décision stratégique en gestion d'actifs et risque.",
+          "achievements": [
+            "Construit un entrepôt de données fonctionnel et multiples marchés de données",
+            "Développé plus de 50 tableaux de bord interactifs utilisant BusinessObjects",
+            "Amélioré l'analyse des risques du marché boursier et les rapports réglementaires"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Prêt à Transformer Votre Stratégie Numérique ?",
+      "description": "Discutons de la façon dont mes plus de 20 ans d'expérience internationale peuvent accélérer votre parcours de transformation numérique.",
+      "consultation": "Planifier une Consultation",
+      "connect": "Se Connecter sur LinkedIn"
+    },
+    "footer": {
+      "title": "Baptiste Leroux",
+      "subtitle": "Consultant en Leadership IT et Livraison Globale",
+      "location": "Basé à Paris, France • Disponible pour des projets à travers l'Europe"
+    }
+  }
