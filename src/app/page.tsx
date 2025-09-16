@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { ChevronDown, ChevronRight, Mail, Phone, Linkedin, Globe, Users, TrendingUp, Database, Cloud, Zap, Target, Languages } from 'lucide-react';
-import { translations, Language } from '../translations';
+import { translations, Language } from './translations';
 
 const ConsultingWebsite = () => {
   const [expandedService, setExpandedService] = useState<string | null>(null);
