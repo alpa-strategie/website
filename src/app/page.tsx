@@ -102,39 +102,39 @@ const ConsultingWebsite = () => {
 
   const packages = [
     {
-      title: 'Digital Transformation Assessment',
+      title: 'IT Leadership Assessment',
       duration: '3 days (24 hours)',
       price: '€3,000-4,000',
       features: [
-        'IT and process maturity evaluation',
-        'Technology stack assessment',
-        'Team capability analysis',
+        'IT organization maturity evaluation',
+        'Technology stack and team capability analysis',
+        'Leadership structure optimization',
         'Quick-win identification',
-        'Executive presentation'
+        'Executive presentation and roadmap'
       ]
     },
     {
-      title: 'CRM & Sales Optimization Sprint',
+      title: 'Offshoring Strategy & Setup',
+      duration: '5 days (40 hours)',
+      price: '€4,500-6,000',
+      features: [
+        'Build vs offshore decision framework',
+        'Vendor evaluation and selection process',
+        'Team setup and management framework',
+        'Risk mitigation and governance design',
+        'Implementation roadmap and success metrics'
+      ]
+    },
+    {
+      title: 'SaaS Product Strategy Sprint',
       duration: '4 days (32 hours)',
       price: '€3,500-4,500',
       features: [
-        'Sales process audit',
-        'CRM platform evaluation',
-        'Automation workflow design',
-        'Performance dashboard setup',
-        'Team training strategy'
-      ]
-    },
-    {
-      title: 'Offshore Development Strategy',
-      duration: '2 days (16 hours)',
-      price: '€2,000-2,500',
-      features: [
-        'Build vs offshore decision framework',
-        'Vendor evaluation process',
-        'Management framework design',
-        'Risk mitigation strategies',
-        'Implementation roadmap'
+        'SaaS architecture assessment',
+        'Scaling bottlenecks identification',
+        'Technology stack optimization',
+        'Product development process audit',
+        'Growth and scaling roadmap'
       ]
     }
   ];
@@ -147,7 +147,7 @@ const ConsultingWebsite = () => {
           <div className="flex justify-between items-center py-6">
             <div>
               <h1 className="text-2xl font-bold text-gray-900">Baptiste Leroux</h1>
-              <p className="text-blue-600 font-medium">Senior Digital Leader & IT Consultant</p>
+              <p className="text-blue-600 font-medium">IT Leadership & Global Delivery Consultant</p>
             </div>
             <div className="flex items-center space-x-4">
               <a href="mailto:bonjour@alpa-strategie.com" className="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
@@ -235,38 +235,37 @@ const ConsultingWebsite = () => {
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-md">
                   <Globe className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                  <h4 className="text-xl font-semibold mb-3">International Expertise</h4>
-                  <p className="text-gray-600">Deep experience in regulated industries (banking) and global enterprises (Electronic Arts).</p>
+                  <h4 className="text-xl font-semibold mb-3">Offshoring Expertise</h4>
+                  <p className="text-gray-600">11 years building and managing 50-person offshore operations with proven cultural bridge expertise.</p>
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-md">
                   <Zap className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                  <h4 className="text-xl font-semibold mb-3">Full-Stack Innovation</h4>
-                  <p className="text-gray-600">From Oracle enterprise systems to modern cloud-native platforms and social innovation leadership.</p>
+                  <h4 className="text-xl font-semibold mb-3">SaaS Product Leadership</h4>
+                  <p className="text-gray-600">50+ SaaS solutions delivered across diverse industries with proven scaling and architecture expertise.</p>
                 </div>
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Key Expertise Areas</h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="text-lg font-semibold text-blue-600 mb-3">Industries</h4>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Financial Services & Banking</li>
-                    <li>• Gaming & Entertainment</li>
-                    <li>• E-commerce & Digital Platforms</li>
-                    <li>• Hospitality & Travel Tech</li>
-                    <li>• Enterprise Software & SaaS</li>
-                  </ul>
-                </div>
+              <div>
+                <h4 className="text-lg font-semibold text-blue-600 mb-3">SaaS Expertise</h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Industry-agnostic SaaS development</li>
+                  <li>• Multi-tenant architecture design</li>
+                  <li>• Global team scaling (4 to 50+ people)</li>
+                  <li>• Offshore development operations</li>
+                  <li>• International project delivery</li>
+                </ul>
+              </div>
                 <div>
                   <h4 className="text-lg font-semibold text-blue-600 mb-3">Technologies</h4>
                   <ul className="space-y-2 text-gray-600">
                     <li>• Cloud Platforms (AWS, Azure, GCP)</li>
                     <li>• Modern Web Frameworks (React, Node.js)</li>
-                    <li>• Enterprise Systems (Oracle, SAP)</li>
-                    <li>• BI Tools (PowerBI, Tableau, BusinessObjects)</li>
-                    <li>• CRM Platforms (HubSpot, Salesforce)</li>
+                    <li>• Enterprise Systems (Oracle, Microsoft, Linux)</li>
+                    <li>• BI Tools (OBIEE, Tableau, BusinessObjects)</li>
+                    <li>• CRM Platforms (HubSpot, AgileCRM)</li>
                   </ul>
                 </div>
               </div>
@@ -453,7 +452,7 @@ const ConsultingWebsite = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <h4 className="text-white font-bold text-lg">Baptiste Leroux</h4>
-              <p className="text-gray-400">Senior Digital Leader & IT Consultant</p>
+              <p className="text-gray-400">IT Leadership & Global Delivery Consultant</p>
             </div>
             <div className="flex items-center space-x-6">
               <a href="mailto:bonjour@alpa-strategie.com" className="text-gray-400 hover:text-white transition-colors">
