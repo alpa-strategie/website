@@ -1,1 +1,2 @@
+# Redirect apex domain to www
 https://alpa-strategie.com/* https://www.alpa-strategie.com/:splat 301!
