@@ -16,9 +16,35 @@
     },
     "nav": {
       "overview": "Aperçu",
+      "about": "À Propos",
       "services": "Services",
       "packages": "Forfaits de Démarrage",
       "experience": "Expérience"
+    },
+    "about": {
+      "title": "À Propos de Baptiste Leroux",
+      "subtitle": "Leader IT Exécutif & Expert en Livraison Globale",
+      "intro": "Avec plus de 20 ans d'expérience internationale, je fais le pont entre la gouvernance d'entreprise et l'agilité startup, aidant les organisations à faire évoluer leurs capacités numériques à l'échelle mondiale.",
+      "backgroundTitle": "Parcours Professionnel",
+      "backgroundText": "J'ai fondé et fait croître StarTechUp Inc. d'une startup de 4 personnes à une agence logicielle internationale de 50 personnes générant plus de 5M$ de revenus. Ce parcours m'a enseigné l'équilibre critique entre croissance rapide et opérations durables, me donnant des perspectives uniques sur les défis entrepreneuriaux agiles et d'échelle entreprise.",
+      "expertiseTitle": "Expertise Principale",
+      "expertiseItems": [
+        "Leadership IT Exécutif : Responsabilité P&L prouvée pour des opérations technologiques de 5M$+",
+        "Gestion d'Équipe Globale : 11 ans de gestion d'opérations offshore de 50 personnes en Asie",
+        "Développement Produit SaaS : 50+ solutions livrées dans la finance, assurance, IoT et plateformes B2C",
+        "Expertise Pont Culturel : Coordination fluide entre cultures d'affaires européennes, américaines et asiatiques",
+        "Transformation Numérique : Des systèmes d'entreprise Oracle aux architectures cloud-native modernes"
+      ],
+      "approachTitle": "Mon Approche",
+      "approachText": "Je combine une expertise technique pratique avec une réflexion stratégique de niveau exécutif. Ayant construit et mis à l'échelle des équipes internationalement, je comprends à la fois les défis opérationnels de la livraison globale et les impératifs stratégiques de la transformation numérique. Mon approche de conseil se concentre sur des solutions pratiques et implémentables qui livrent une valeur commerciale mesurable.",
+      "credentialsTitle": "Références & Reconnaissance",
+      "credentialsItems": [
+        "Plus de 20 ans d'expérience en leadership technologique international",
+        "Opérations mises à l'échelle dans plus de 10 pays avec expertise culturelle prouvée",
+        "Plus de 5M$ de revenus générés grâce aux solutions technologiques et mise à l'échelle d'équipe",
+        "Plus de 100 livraisons de projets réussies avec clients entreprise et startup",
+        "Historique prouvé dans le développement de produits SaaS B2B et B2C"
+      ]
     },
     "overview": {
       "title": "Pourquoi Choisir Baptiste Leroux ?",
@@ -54,7 +80,6 @@
         {
           "id": "strategy",
           "title": "Stratégie IT Exécutive & Transformation Numérique",
-          "rate": "€140-170/heure",
           "description": "Stratégie technologique de niveau C et conception de programme de transformation numérique",
           "details": [
             "Développement de stratégie technologique et feuille de route",
@@ -66,37 +91,86 @@
           "value": "Leadership exécutif prouvé avec mise à l'échelle d'équipes de 4 à 50 personnes et responsabilité P&L de 5M$+"
         },
         {
-          "id": "delivery",
-          "title": "Livraison Logicielle Globale & Transformation Agile",
-          "rate": "€120-150/heure",
-          "description": "Frameworks de livraison de bout en bout et gestion d'équipe internationale",
+          "id": "pmo",
+          "title": "Services PMO & Gouvernance de Projet",
+          "description": "Configuration de Bureau de Gestion de Projet et gouvernance de projet d'entreprise",
           "details": [
-            "Implémentation et optimisation Agile/Scrum",
-            "Frameworks de gestion d'équipe à distance",
-            "Gouvernance de projet et performance basée sur KPI",
-            "Sélection de fournisseurs offshore/nearshore",
-            "Stratégies d'assurance qualité"
+            "Conception et implémentation de framework PMO",
+            "Gestion de portefeuille de projets et priorisation",
+            "Allocation des ressources et planification de capacité",
+            "Gouvernance de projet et gestion des risques",
+            "Métriques de performance et tableaux de bord de reporting"
           ],
-          "value": "11 ans de gestion de 100+ projets réussis dans plus de 10 pays"
+          "value": "Expérience exécutive de mise à l'échelle de livraison de projet de startup à entreprise avec frameworks de gouvernance prouvés"
         },
         {
-          "id": "data",
-          "title": "Intelligence d'Affaires & Stratégie de Données",
-          "rate": "€130-160/heure",
-          "description": "Architecture de données d'entreprise et modernisation de plateforme BI",
+          "id": "saas",
+          "title": "Développement SaaS - Expérience en Finance, Assurance, Industrie, IoT, Marketing, plateformes B2C, ONG",
+          "description": "Architecture de produit SaaS et expertise de mise à l'échelle dans toutes les industries",
           "details": [
-            "Framework de gouvernance des données (RGPD, CCPA)",
-            "Modernisation de plateforme BI",
-            "Révision d'architecture d'entrepôt de données",
-            "Frameworks d'analyses avancées et KPI",
-            "Stratégie de tableaux de bord en temps réel"
+            "Conception d'architecture SaaS multi-locataire",
+            "Développement de produit agnostique à l'industrie",
+            "Frameworks de mise à l'échelle du MVP à l'entreprise",
+            "Optimisation et automatisation de livraison SaaS",
+            "Coordination d'équipe globale pour produits SaaS"
           ],
-          "value": "Expertise approfondie du secteur bancaire au gaming avec expérience de conformité réglementaire"
+          "value": "Plus de 50 solutions SaaS livrées dans diverses industries avec expertise de mise à l'échelle prouvée"
+        },
+        {
+          "id": "global-delivery",
+          "title": "Livraison Logicielle Globale & Transformation Agile",
+          "description": "Optimisation de livraison logicielle internationale et transformation agile",
+          "details": [
+            "Conception et implémentation de modèle de livraison globale",
+            "Transformation agile et frameworks de mise à l'échelle",
+            "Gestion d'équipes interculturelles",
+            "Coordination et gouvernance d'équipes distribuées",
+            "Assurance qualité et optimisation de livraison"
+          ],
+          "value": "11 ans de gestion d'équipes internationales dans plus de 10 pays avec excellence de livraison prouvée"
+        },
+        {
+          "id": "offshoring",
+          "title": "Délocalisation & Stratégie de Livraison Globale",
+          "description": "Configuration stratégique d'équipe offshore et optimisation de livraison internationale",
+          "details": [
+            "Frameworks de décision offshore vs onshore",
+            "Processus d'évaluation et sélection de fournisseurs",
+            "Gestion de pont culturel et communication",
+            "Mise à l'échelle d'équipe internationale et gouvernance",
+            "Atténuation des risques et assurance qualité"
+          ],
+          "value": "11 ans de gestion d'opérations offshore de 50 personnes en Asie avec expertise culturelle prouvée"
+        },
+        {
+          "id": "innovation",
+          "title": "Innovation & Stratégie Produit",
+          "description": "Stratégie d'innovation produit et positionnement marché pour entreprises technologiques",
+          "details": [
+            "Stratégie produit et positionnement marché",
+            "Conception de framework d'innovation",
+            "Analyse et adoption des tendances technologiques",
+            "Développement de feuille de route produit",
+            "Optimisation de stratégie go-to-market"
+          ],
+          "value": "Historique prouvé de mise à l'échelle de produits du concept à 5M$+ de revenus avec pénétration de marché international"
+        },
+        {
+          "id": "bi",
+          "title": "Intelligence d'Affaires & Stratégie de Données",
+          "description": "Stratégie de données d'entreprise et implémentation d'intelligence d'affaires",
+          "details": [
+            "Frameworks de stratégie et gouvernance des données",
+            "Conception d'architecture d'intelligence d'affaires",
+            "Implémentation d'entrepôt de données et d'analyses",
+            "Tableaux de bord de performance et reporting",
+            "Processus de prise de décision basés sur les données"
+          ],
+          "value": "Implémentations BI à l'échelle entreprise avec ROI prouvé et support de décision stratégique"
         },
         {
           "id": "crm",
           "title": "CRM & Technologie Marketing",
-          "rate": "€110-140/heure",
           "description": "Automatisation des processus de vente et optimisation technologique marketing",
           "details": [
             "Stratégie CRM (HubSpot, AgileCRM, Salesforce)",
@@ -110,7 +184,6 @@
         {
           "id": "cloud",
           "title": "Architecture Cloud & Plateformes Numériques",
-          "rate": "€120-150/heure",
           "description": "Stratégie de migration cloud et architecture de plateforme évolutive",
           "details": [
             "Stratégie de migration cloud (AWS, Azure, GCP)",
@@ -120,20 +193,6 @@
             "Stratégies d'optimisation des coûts"
           ],
           "value": "Expérience pratique de construction de plateformes cloud-native à l'échelle entreprise"
-        },
-        {
-          "id": "innovation",
-          "title": "Innovation & Stratégie Produit",
-          "rate": "€100-130/heure",
-          "description": "Développement de stratégie produit et méthodologie d'innovation",
-          "details": [
-            "Développement de stratégie produit et feuille de route",
-            "Conception MVP et prototypage rapide",
-            "Méthodologies de validation de marché",
-            "Stratégie de mise sur le marché pour produits tech",
-            "Configuration de laboratoire d'innovation"
-          ],
-          "value": "Historique prouvé de construction de multiples produits du concept au marché"
         }
       ]
     },

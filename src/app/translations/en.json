@@ -16,9 +16,35 @@
     },
     "nav": {
       "overview": "Overview",
+      "about": "About",
       "services": "Services",
       "packages": "Starter Packages",
       "experience": "Experience"
+    },
+    "about": {
+      "title": "About Baptiste Leroux",
+      "subtitle": "Executive IT Leader & Global Delivery Expert",
+      "intro": "With 20+ years of international experience, I bridge the gap between enterprise governance and startup agility, helping organizations scale their digital capabilities globally.",
+      "backgroundTitle": "Professional Background",
+      "backgroundText": "I founded and scaled StarTechUp Inc. from a 4-person startup to a 50-person international software agency generating $5M+ revenue. This journey taught me the critical balance between rapid growth and sustainable operations, giving me unique insights into both entrepreneurial agility and enterprise-scale challenges.",
+      "expertiseTitle": "Core Expertise",
+      "expertiseItems": [
+        "Executive IT Leadership: Proven P&L responsibility for $5M+ technology operations",
+        "Global Team Management: 11 years managing 50-person offshore operations across Asia",
+        "SaaS Product Development: 50+ solutions delivered across finance, insurance, IoT, and B2C platforms",
+        "Cultural Bridge Expertise: Seamless coordination between European, American, and Asian business cultures",
+        "Digital Transformation: From Oracle enterprise systems to modern cloud-native architectures"
+      ],
+      "approachTitle": "My Approach",
+      "approachText": "I combine hands-on technical expertise with executive-level strategic thinking. Having built and scaled teams internationally, I understand both the operational challenges of global delivery and the strategic imperatives of digital transformation. My consulting approach focuses on practical, implementable solutions that deliver measurable business value.",
+      "credentialsTitle": "Credentials & Recognition",
+      "credentialsItems": [
+        "20+ years international technology leadership experience",
+        "Scaled operations across 10+ countries with proven cultural expertise",
+        "Generated $5M+ revenue through technology solutions and team scaling",
+        "Managed 100+ successful project deliveries with enterprise and startup clients",
+        "Proven track record in both B2B and B2C SaaS product development"
+      ]
     },
     "overview": {
       "title": "Why Choose Baptiste Leroux?",
@@ -54,7 +80,6 @@
         {
           "id": "strategy",
           "title": "Executive IT Strategy & Digital Transformation",
-          "rate": "€140-170/hour",
           "description": "C-level technology strategy and digital transformation program design",
           "details": [
             "Technology strategy and roadmap development",
@@ -66,37 +91,86 @@
           "value": "Proven executive leadership scaling from 4 to 50-person teams with $5M+ P&L responsibility"
         },
         {
-          "id": "delivery",
-          "title": "Global Software Delivery & Agile Transformation",
-          "rate": "€120-150/hour",
-          "description": "End-to-end delivery frameworks and international team management",
+          "id": "pmo",
+          "title": "PMO Services & Project Governance",
+          "description": "Project Management Office setup and enterprise project governance",
           "details": [
-            "Agile/Scrum implementation and optimization",
-            "Remote team management frameworks",
-            "Project governance and KPI-driven performance",
-            "Offshore/nearshore vendor selection",
-            "Quality assurance strategies"
+            "PMO framework design and implementation",
+            "Project portfolio management and prioritization",
+            "Resource allocation and capacity planning",
+            "Project governance and risk management",
+            "Performance metrics and reporting dashboards"
           ],
-          "value": "11 years managing 100+ successful projects across 10+ countries"
+          "value": "Executive experience scaling project delivery from startup to enterprise with proven governance frameworks"
         },
         {
-          "id": "data",
-          "title": "Business Intelligence & Data Strategy",
-          "rate": "€130-160/hour",
-          "description": "Enterprise data architecture and BI platform modernization",
+          "id": "saas",
+          "title": "SaaS Development - Worked in Finance, Insurance, Industry, IoT, Marketing, B2C platforms, NGO",
+          "description": "SaaS product architecture and scaling expertise across all industries",
           "details": [
-            "Data governance framework (GDPR, CCPA)",
-            "BI platform modernization",
-            "Data warehouse architecture review",
-            "Advanced analytics and KPI frameworks",
-            "Real-time dashboard strategy"
+            "Multi-tenant SaaS architecture design",
+            "Industry-agnostic product development",
+            "Scaling frameworks from MVP to enterprise",
+            "SaaS delivery optimization and automation",
+            "Global team coordination for SaaS products"
           ],
-          "value": "Deep expertise from banking to gaming with regulatory compliance experience"
+          "value": "50+ SaaS solutions delivered across diverse industries with proven scaling expertise"
+        },
+        {
+          "id": "global-delivery",
+          "title": "Global Software Delivery & Agile Transformation",
+          "description": "International software delivery optimization and agile transformation",
+          "details": [
+            "Global delivery model design and implementation",
+            "Agile transformation and scaling frameworks",
+            "Cross-cultural team management",
+            "Distributed team coordination and governance",
+            "Quality assurance and delivery optimization"
+          ],
+          "value": "11 years managing international teams across 10+ countries with proven delivery excellence"
+        },
+        {
+          "id": "offshoring",
+          "title": "Offshoring & Global Delivery Strategy",
+          "description": "Strategic offshore team setup and international delivery optimization",
+          "details": [
+            "Offshore vs onshore decision frameworks",
+            "Vendor evaluation and selection process",
+            "Cultural bridge management and communication",
+            "International team scaling and governance",
+            "Risk mitigation and quality assurance"
+          ],
+          "value": "11 years managing 50-person offshore operations across Asia with proven cultural expertise"
+        },
+        {
+          "id": "innovation",
+          "title": "Innovation & Product Strategy",
+          "description": "Product innovation strategy and market positioning for technology companies",
+          "details": [
+            "Product strategy and market positioning",
+            "Innovation framework design",
+            "Technology trend analysis and adoption",
+            "Product roadmap development",
+            "Go-to-market strategy optimization"
+          ],
+          "value": "Proven track record scaling products from concept to $5M+ revenue with international market penetration"
+        },
+        {
+          "id": "bi",
+          "title": "Business Intelligence & Data Strategy",
+          "description": "Enterprise data strategy and business intelligence implementation",
+          "details": [
+            "Data strategy and governance frameworks",
+            "Business intelligence architecture design",
+            "Data warehouse and analytics implementation",
+            "Performance dashboards and reporting",
+            "Data-driven decision making processes"
+          ],
+          "value": "Enterprise-scale BI implementations with proven ROI and strategic decision support"
         },
         {
           "id": "crm",
           "title": "CRM & Marketing Technology",
-          "rate": "€110-140/hour",
           "description": "Sales process automation and marketing technology optimization",
           "details": [
             "CRM strategy (HubSpot, AgileCRM, Salesforce)",
@@ -110,7 +184,6 @@
         {
           "id": "cloud",
           "title": "Cloud Architecture & Digital Platforms",
-          "rate": "€120-150/hour",
           "description": "Cloud migration strategy and scalable platform architecture",
           "details": [
             "Cloud migration strategy (AWS, Azure, GCP)",
@@ -120,20 +193,6 @@
             "Cost optimization strategies"
           ],
           "value": "Hands-on experience building cloud-native platforms at enterprise scale"
-        },
-        {
-          "id": "innovation",
-          "title": "Innovation & Product Strategy",
-          "rate": "€100-130/hour",
-          "description": "Product strategy development and innovation methodology",
-          "details": [
-            "Product strategy and roadmap development",
-            "MVP design and rapid prototyping",
-            "Market validation methodologies",
-            "Go-to-market strategy for tech products",
-            "Innovation lab setup"
-          ],
-          "value": "Proven track record building multiple products from concept to market"
         }
       ]
     },
