@@ -203,6 +203,7 @@
       "items": [
         {
           "title": "Évaluation du Leadership IT",
+          "outcome": "Identifiez les gains rapides et optimisez votre organisation IT pour la croissance",
           "duration": "3 jours (24 heures)",
           "price": "€3,000-4,000",
           "features": [
@@ -215,6 +216,7 @@
         },
         {
           "title": "Stratégie & Configuration de Délocalisation",
+          "outcome": "Établissez des opérations offshore rentables avec une gestion de pont culturel éprouvée",
           "duration": "5 jours (40 heures)",
           "price": "€4,500-6,000",
           "features": [
@@ -230,6 +232,7 @@
         },
         {
           "title": "Sprint Stratégie Produit SaaS",
+          "outcome": "Accélérez la croissance SaaS avec une architecture optimisée et une feuille de route de mise à l'échelle",
           "duration": "4 jours (32 heures)",
           "price": "€3,500-4,500",
           "features": [
@@ -242,6 +245,7 @@
         },
         {
           "title": "Configuration PMO & Gouvernance de Projet",
+          "outcome": "Établissez une livraison de projet fiable avec une gouvernance de niveau entreprise et un suivi de performance",
           "duration": "5 jours (40 heures)",
           "price": "€4,000-5,500",
           "features": [
@@ -256,6 +260,7 @@
         },
         {
           "title": "Préparation à la Transformation Numérique",
+          "outcome": "Préparez votre organisation pour une transformation numérique réussie avec des priorités claires et des gains rapides",
           "duration": "4 jours (32 heures)",
           "price": "€3,500-4,500",
           "features": [
@@ -268,6 +273,7 @@
         },
         {
           "title": "Conception de Modèle de Livraison Globale",
+          "outcome": "Construisez des capacités de livraison globale évolutives avec une coordination d'équipe interculturelle optimisée",
           "duration": "6 jours (48 heures)",
           "price": "€5,000-6,500",
           "features": [
