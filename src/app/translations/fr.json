@@ -8,10 +8,10 @@
     "hero": {
       "title": "Transformez Votre Avenir Numérique",
       "description": "Plus de 20 ans d'expertise internationale en transformation numérique, des systèmes d'entreprise Oracle à la création d'une agence logicielle de 5M$+. J'aide les organisations à faire le pont entre la gouvernance d'entreprise et l'agilité startup.",
-      "stat1": "100+ Projets Livrés",
-      "stat2": "10+ Pays",
-      "stat3": "5M$+ de Revenus Générés",
-      "stat4": "50+ Membres d'Équipe Dirigés",
+      "stat1": "Données",
+      "stat2": "CRM",
+      "stat3": "Développement Logiciel",
+      "stat4": "Optimisation Business",
       "cta": "Commencer Votre Transformation"
     },
     "nav": {
@@ -79,7 +79,7 @@
       "items": [
         {
           "id": "strategy",
-          "title": "Stratégie IT Exécutive & Transformation Numérique",
+          "title": "Obtenez des Changements Mesurables avec une Stratégie IT Exécutive",
           "description": "Stratégie technologique de niveau C et conception de programme de transformation numérique",
           "details": [
             "Développement de stratégie technologique et feuille de route",
@@ -92,7 +92,7 @@
         },
         {
           "id": "pmo",
-          "title": "Services PMO & Gouvernance de Projet",
+          "title": "Livrez des Programmes de Manière Fiable avec la Gouvernance PMO d'Entreprise",
           "description": "Configuration de Bureau de Gestion de Projet et gouvernance de projet d'entreprise",
           "details": [
             "Conception et implémentation de framework PMO",
@@ -218,11 +218,14 @@
           "duration": "5 jours (40 heures)",
           "price": "€4,500-6,000",
           "features": [
-            "Framework de décision construire vs délocaliser",
-            "Processus d'évaluation et sélection de fournisseurs",
-            "Framework de configuration et gestion d'équipe",
-            "Conception d'atténuation des risques et gouvernance",
-            "Feuille de route d'implémentation et métriques de succès"
+            "Framework de décision construire vs délocaliser avec analyse ROI",
+            "Processus complet d'évaluation et sélection de fournisseurs",
+            "Gestion de pont culturel et protocoles de communication",
+            "Conception de framework de configuration, mise à l'échelle et gouvernance d'équipe",
+            "Stratégies d'atténuation des risques et processus d'assurance qualité",
+            "Feuille de route d'implémentation avec métriques de succès 90 jours",
+            "Standards de transfert de connaissances et documentation",
+            "Configuration de monitoring de performance et tableau de bord KPI"
           ]
         },
         {
@@ -235,6 +238,46 @@
             "Optimisation de pile technologique",
             "Audit de processus de développement produit",
             "Feuille de route de croissance et mise à l'échelle"
+          ]
+        },
+        {
+          "title": "Configuration PMO & Gouvernance de Projet",
+          "duration": "5 jours (40 heures)",
+          "price": "€4,000-5,500",
+          "features": [
+            "Conception de framework PMO et feuille de route d'implémentation",
+            "Évaluation de portefeuille de projets et matrice de priorisation",
+            "Framework d'allocation des ressources et planification de capacité",
+            "Structure de gouvernance et processus de prise de décision",
+            "Conception de métriques de performance et tableau de bord KPI",
+            "Procédures de gestion des risques et d'escalade",
+            "Standards de livraison de projet et portes de qualité"
+          ]
+        },
+        {
+          "title": "Préparation à la Transformation Numérique",
+          "duration": "4 jours (32 heures)",
+          "price": "€3,500-4,500",
+          "features": [
+            "Évaluation de maturité numérique dans toutes les fonctions business",
+            "Évaluation de pile technologique et feuille de route de modernisation",
+            "Stratégie de gestion du changement et alignement des parties prenantes",
+            "Identification de gains rapides et plan d'implémentation",
+            "Présentation exécutive avec priorités de transformation"
+          ]
+        },
+        {
+          "title": "Conception de Modèle de Livraison Globale",
+          "duration": "6 jours (48 heures)",
+          "price": "€5,000-6,500",
+          "features": [
+            "Évaluation du modèle de livraison actuel et analyse des écarts",
+            "Structure d'équipe globale et framework de coordination",
+            "Protocoles de communication interculturelle et formation",
+            "Processus d'assurance qualité et d'optimisation de livraison",
+            "Plan de monitoring de performance et d'amélioration continue",
+            "Stratégies d'atténuation des risques pour équipes distribuées",
+            "Feuille de route d'implémentation avec jalons 90 jours"
           ]
         }
       ]
@@ -274,6 +317,39 @@
             "Construit un entrepôt de données fonctionnel et multiples marchés de données",
             "Développé plus de 50 tableaux de bord interactifs utilisant BusinessObjects",
             "Amélioré l'analyse des risques du marché boursier et les rapports réglementaires"
+          ]
+        },
+        {
+          "company": "ARES",
+          "role": "Consultant BI / Oracle",
+          "period": "2008 - 2009",
+          "description": "Fourni des services de conseil en intelligence d'affaires Oracle pour clients entreprise.",
+          "achievements": [
+            "Implémenté des solutions Oracle BI pour environnements d'entreprise à grande échelle",
+            "Conçu et optimisé des architectures d'entrepôt de données",
+            "Livré des améliorations de performance et automatisation de reporting"
+          ]
+        },
+        {
+          "company": "ESADE",
+          "role": "Développeur Portail Web",
+          "period": "2007 - 2008",
+          "description": "Développé des solutions de portail web pour applications éducatives et commerciales.",
+          "achievements": [
+            "Construit des architectures de portail web évolutives",
+            "Implémenté des systèmes de gestion d'utilisateurs et de livraison de contenu",
+            "Amélioré l'expérience utilisateur et les performances système"
+          ]
+        },
+        {
+          "company": "Oracle",
+          "role": "Intégrateur Produit Oracle",
+          "period": "2005 - 2007",
+          "description": "Spécialisé dans l'intégration de produits Oracle et implémentations de systèmes d'entreprise.",
+          "achievements": [
+            "Dirigé des projets d'intégration de produits Oracle pour clients entreprise",
+            "Fourni une expertise technique dans les solutions de l'écosystème Oracle",
+            "Livré des intégrations système complexes et migrations"
           ]
         }
       ]

@@ -8,10 +8,10 @@
     "hero": {
       "title": "Transform Your Digital Future",
       "description": "20+ years of international expertise in digital transformation, from Oracle enterprise systems to founding a $5M+ software agency. I help organizations bridge enterprise governance with startup agility.",
-      "stat1": "100+ Projects Delivered",
-      "stat2": "10+ Countries",
-      "stat3": "$5M+ Revenue Generated",
-      "stat4": "50+ Team Members Led",
+      "stat1": "Data",
+      "stat2": "CRM",
+      "stat3": "Software Development",
+      "stat4": "Business Optimization",
       "cta": "Start Your Transformation"
     },
     "nav": {
@@ -79,7 +79,7 @@
       "items": [
         {
           "id": "strategy",
-          "title": "Executive IT Strategy & Digital Transformation",
+          "title": "Achieve Measurable Change with Executive IT Strategy",
           "description": "C-level technology strategy and digital transformation program design",
           "details": [
             "Technology strategy and roadmap development",
@@ -92,7 +92,7 @@
         },
         {
           "id": "pmo",
-          "title": "PMO Services & Project Governance",
+          "title": "Deliver Programs Reliably with Enterprise PMO Governance",
           "description": "Project Management Office setup and enterprise project governance",
           "details": [
             "PMO framework design and implementation",
@@ -105,7 +105,7 @@
         },
         {
           "id": "saas",
-          "title": "SaaS Development - Worked in Finance, Insurance, Industry, IoT, Marketing, B2C platforms, NGO",
+          "title": "Scale SaaS Products from MVP to Enterprise Revenue",
           "description": "SaaS product architecture and scaling expertise across all industries",
           "details": [
             "Multi-tenant SaaS architecture design",
@@ -203,6 +203,7 @@
       "items": [
         {
           "title": "IT Leadership Assessment",
+          "outcome": "Identify quick wins and optimize your IT organization for growth",
           "duration": "3 days (24 hours)",
           "price": "€3,000-4,000",
           "features": [
@@ -215,18 +216,23 @@
         },
         {
           "title": "Offshoring Strategy & Setup",
+          "outcome": "Establish cost-effective offshore operations with proven cultural bridge management",
           "duration": "5 days (40 hours)",
           "price": "€4,500-6,000",
           "features": [
-            "Build vs offshore decision framework",
-            "Vendor evaluation and selection process",
-            "Team setup and management framework",
-            "Risk mitigation and governance design",
-            "Implementation roadmap and success metrics"
+            "Build vs offshore decision framework with ROI analysis",
+            "Comprehensive vendor evaluation and selection process",
+            "Cultural bridge management and communication protocols",
+            "Team setup, scaling, and governance framework design",
+            "Risk mitigation strategies and quality assurance processes",
+            "Implementation roadmap with 90-day success metrics",
+            "Knowledge transfer and documentation standards",
+            "Performance monitoring and KPI dashboard setup"
           ]
         },
         {
           "title": "SaaS Product Strategy Sprint",
+          "outcome": "Accelerate SaaS growth with optimized architecture and scaling roadmap",
           "duration": "4 days (32 hours)",
           "price": "€3,500-4,500",
           "features": [
@@ -235,6 +241,46 @@
             "Technology stack optimization",
             "Product development process audit",
             "Growth and scaling roadmap"
+          ]
+        },
+        {
+          "title": "PMO Setup & Project Governance",
+          "duration": "5 days (40 hours)",
+          "price": "€4,000-5,500",
+          "features": [
+            "PMO framework design and implementation roadmap",
+            "Project portfolio assessment and prioritization matrix",
+            "Resource allocation and capacity planning framework",
+            "Governance structure and decision-making processes",
+            "Performance metrics and KPI dashboard design",
+            "Risk management and escalation procedures",
+            "Project delivery standards and quality gates"
+          ]
+        },
+        {
+          "title": "Digital Transformation Readiness",
+          "duration": "4 days (32 hours)",
+          "price": "€3,500-4,500",
+          "features": [
+            "Digital maturity assessment across all business functions",
+            "Technology stack evaluation and modernization roadmap",
+            "Change management strategy and stakeholder alignment",
+            "Quick-win identification and implementation plan",
+            "Executive presentation with transformation priorities"
+          ]
+        },
+        {
+          "title": "Global Delivery Model Design",
+          "duration": "6 days (48 hours)",
+          "price": "€5,000-6,500",
+          "features": [
+            "Current delivery model assessment and gap analysis",
+            "Global team structure and coordination framework",
+            "Cross-cultural communication protocols and training",
+            "Quality assurance and delivery optimization processes",
+            "Performance monitoring and continuous improvement plan",
+            "Risk mitigation strategies for distributed teams",
+            "Implementation roadmap with 90-day milestones"
           ]
         }
       ]
@@ -274,6 +320,39 @@
             "Built functional data warehouse and multiple data marts",
             "Developed 50+ interactive dashboards using BusinessObjects",
             "Enhanced stock market risk analysis and regulatory reporting"
+          ]
+        },
+        {
+          "company": "ARES",
+          "role": "Consultant BI / Oracle",
+          "period": "2008 - 2009",
+          "description": "Provided Oracle business intelligence consulting services for enterprise clients.",
+          "achievements": [
+            "Implemented Oracle BI solutions for large-scale enterprise environments",
+            "Designed and optimized data warehouse architectures",
+            "Delivered performance improvements and reporting automation"
+          ]
+        },
+        {
+          "company": "ESADE",
+          "role": "Web Portal Developer",
+          "period": "2007 - 2008",
+          "description": "Developed web portal solutions for educational and business applications.",
+          "achievements": [
+            "Built scalable web portal architectures",
+            "Implemented user management and content delivery systems",
+            "Enhanced user experience and system performance"
+          ]
+        },
+        {
+          "company": "Oracle",
+          "role": "Oracle Product Integrator",
+          "period": "2005 - 2007",
+          "description": "Specialized in Oracle product integration and enterprise system implementations.",
+          "achievements": [
+            "Led Oracle product integration projects for enterprise clients",
+            "Provided technical expertise in Oracle ecosystem solutions",
+            "Delivered complex system integrations and migrations"
           ]
         }
       ]

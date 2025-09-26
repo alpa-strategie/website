@@ -18,8 +18,11 @@ const PackagesContent = () => {
           {t.packages.items.map((pkg, index) => (
             <div key={index} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
               <h4 className="text-xl font-bold text-gray-900 mb-2">{pkg.title}</h4>
-              <div className="text-blue-600 font-semibold mb-4">{pkg.duration}</div>
-              <div className="text-2xl font-bold text-gray-900 mb-6">{pkg.price}</div>
+              {pkg.outcome && (
+                <p className="text-gray-600 text-sm mb-3 italic">{pkg.outcome}</p>
+              )}
+              <div className="text-blue-600 font-semibold mb-2">{pkg.duration}</div>
+              <div className="text-lg font-bold text-gray-500 mb-6">{pkg.price}</div>
               <ul className="space-y-3">
                 {pkg.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start">

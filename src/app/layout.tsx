@@ -14,22 +14,41 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Baptiste Leroux - IT Leadership & Digital Transformation Consultant",
-  description: "20+ years of international expertise in digital transformation, global software delivery, and IT strategy consulting. Transform your digital future.",
-  keywords: 'IT consultant, digital transformation, software delivery, CTO services, enterprise architecture',
+  title: "Baptiste Leroux - IT Leadership & Global Delivery Consultant | ALPA Stratégie",
+  description: "20+ years international expertise in digital transformation, offshoring strategy, and SaaS development. Executive IT consultant helping scale teams from 4 to 50+ people with $5M+ P&L experience across 10+ countries.",
+  keywords: 'IT consultant, digital transformation, offshoring strategy, global software delivery, CTO services, enterprise architecture, SaaS development, PMO services, cultural bridge expertise, international team management, executive IT leadership, startup to enterprise scaling',
   authors: [{ name: 'Baptiste Leroux' }],
   openGraph: {
-    title: 'Baptiste Leroux - IT Leadership Consultant',
-    description: '20+ years of international expertise in digital transformation and IT strategy consulting.',
+    title: 'Baptiste Leroux - IT Leadership & Global Delivery Consultant',
+    description: 'Executive IT consultant with 20+ years international experience. Proven track record scaling teams 4→50+ people, $5M+ revenue, 100+ projects across 10+ countries.',
     url: 'https://www.alpa-strategie.com',
-    siteName: 'ALPA Strategie',
+    siteName: 'ALPA Stratégie',
     type: 'website',
+    locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Baptiste Leroux - IT Leadership Consultant',
-    description: '20+ years of international expertise in digital transformation and IT strategy consulting.',
-  }
+    title: 'Baptiste Leroux - IT Leadership & Global Delivery Consultant',
+    description: 'Executive IT consultant with 20+ years international experience. Proven track record scaling teams 4→50+ people, $5M+ revenue.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  alternates: {
+    canonical: 'https://www.alpa-strategie.com',
+    languages: {
+      'en-US': 'https://www.alpa-strategie.com',
+      'fr-FR': 'https://www.alpa-strategie.com/fr',
+    },
+  },
 };
 
 export default function RootLayout({
