@@ -327,8 +327,8 @@
         },
         {
           "company": "ARES",
-          "role": "Consultant BI / Oracle",
-          "period": "2008 - 2009",
+          "role": "Consultant BI",
+          "period": "2007 - 2009",
           "description": "Provided Oracle business intelligence consulting services for enterprise clients.",
           "achievements": [
             "Implemented Oracle BI solutions for large-scale enterprise environments",
@@ -339,7 +339,7 @@
         {
           "company": "ESADE",
           "role": "Web Portal Developer",
-          "period": "2007 - 2008",
+          "period": "2005 - 2006",
           "description": "Developed web portal solutions for educational and business applications.",
           "achievements": [
             "Built scalable web portal architectures",
@@ -350,7 +350,7 @@
         {
           "company": "Oracle",
           "role": "Oracle Product Integrator",
-          "period": "2005 - 2007",
+          "period": "2004",
           "description": "Specialized in Oracle product integration and enterprise system implementations.",
           "achievements": [
             "Led Oracle product integration projects for enterprise clients",
