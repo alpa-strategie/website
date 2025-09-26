@@ -106,7 +106,7 @@ const HomeContent = () => {
                 
                 <div className="mt-6 pt-6 border-t border-white/30">
                   <p className="text-sm text-gray-600 text-center italic">
-                    "Bridging cultures, scaling teams, delivering results"
+                    &quot;Bridging cultures, scaling teams, delivering results&quot;
                   </p>
                 </div>
               </div>
