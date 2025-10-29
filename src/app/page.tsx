@@ -104,32 +104,32 @@ const HomeContent = () => {
                       className="object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Baptiste Leroux</h3>
-                  <p className="gradient-text-blue font-semibold">Digital Leader & IT Strategist</p>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{t.visualCard.name}</h3>
+                  <p className="gradient-text-blue font-semibold">{t.visualCard.subtitle}</p>
                 </div>
                 
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-3 bg-white/50 rounded-lg">
-                    <span className="text-gray-700 font-medium">Customer Satisfaction</span>
-                    <span className="gradient-text font-bold">Highest Priority</span>
+                    <span className="text-gray-700 font-medium">{t.visualCard.customerSatisfaction}</span>
+                    <span className="gradient-text font-bold">{t.visualCard.highestPriority}</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-white/50 rounded-lg">
-                    <span className="text-gray-700 font-medium">Projects Delivered</span>
-                    <span className="gradient-text font-bold">100+</span>
+                    <span className="text-gray-700 font-medium">{t.visualCard.projectsDelivered}</span>
+                    <span className="gradient-text font-bold">{t.visualCard.projectsCount}</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-white/50 rounded-lg">
-                    <span className="text-gray-700 font-medium">Team Scale</span>
-                    <span className="gradient-text font-bold">4→50+</span>
+                    <span className="text-gray-700 font-medium">{t.visualCard.teamScale}</span>
+                    <span className="gradient-text font-bold">{t.visualCard.teamScaleValue}</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-white/50 rounded-lg">
-                    <span className="text-gray-700 font-medium">Global Reach</span>
-                    <span className="gradient-text font-bold">3 Continents</span>
+                    <span className="text-gray-700 font-medium">{t.visualCard.globalReach}</span>
+                    <span className="gradient-text font-bold">{t.visualCard.globalReachValue}</span>
                   </div>
                 </div>
                 
                 <div className="mt-6 pt-6 border-t border-white/30">
                   <p className="text-sm text-gray-600 text-center italic">
-                    &quot;Bridging cultures, scaling teams, delivering results&quot;
+                    &quot;{t.visualCard.quote}&quot;
                   </p>
                 </div>
               </div>

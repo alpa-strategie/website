@@ -22,6 +22,14 @@ It’s engineered for clarity, performance, and AI-assisted maintainability thro
 - **Type Checking**: TypeScript strict mode
 - **Runtime**: Node LTS (v18 +)
 
+### Deployment & Hosting
+- **Platform**: Netlify
+- **Deployment**: Continuous deployment from GitHub main branch
+- **Build Command**: `npm run build`
+- **Publish Directory**: `.next`
+- **Domain**: alpa-strategie.com
+- **Features**: Automatic HTTPS, CDN, instant rollbacks
+
 ## Development Setup
 
 ### Prerequisites

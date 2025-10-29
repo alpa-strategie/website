@@ -9,10 +9,23 @@
       "title": "Transformez Votre Avenir Numérique",
       "description": "Plus de 20 ans d'expertise internationale en transformation numérique, des systèmes d'entreprise Oracle à la création d'une agence logicielle de 5M$+. J'aide les organisations à faire le pont entre la gouvernance d'entreprise et l'agilité startup.",
       "stat1": "Données",
-      "stat2": "CRM / ERP",
+      "stat2": "CRM/ERP",
       "stat3": "Développement Logiciel",
       "stat4": "Optimisation Business",
       "cta": "Commencer Votre Transformation"
+    },
+    "visualCard": {
+      "name": "Baptiste Leroux",
+      "subtitle": "Leader Digital & Stratège IT",
+      "customerSatisfaction": "Satisfaction Client",
+      "highestPriority": "Priorité Absolue",
+      "projectsDelivered": "Projets Livrés",
+      "projectsCount": "100+",
+      "teamScale": "Échelle d'Équipe",
+      "teamScaleValue": "4→50+",
+      "globalReach": "Portée Mondiale",
+      "globalReachValue": "3 Continents",
+      "quote": "Faire le pont entre les cultures, mettre à l'échelle les équipes, livrer des résultats"
     },
     "nav": {
       "overview": "Aperçu",

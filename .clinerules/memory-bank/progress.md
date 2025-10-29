@@ -71,6 +71,11 @@ No active bugs or issues reported at this time.
 ## Changelog
 
 ### 2025-10-29
+- **Implemented**: Visual Card Column internationalization
+  - Added `visualCard` translations to both en.json and fr.json
+  - Replaced all hard-coded text with translation keys
+  - Includes: name, subtitle, stats labels, stats values, and quote
+  - Visual Card now properly switches between English and French
 - **Fixed**: Software Development text wrapping issue in hero stats
   - Reduced horizontal padding from px-4 to px-3 on stat cards
   - Provides more space for "Software Development" text to fit on 2 lines

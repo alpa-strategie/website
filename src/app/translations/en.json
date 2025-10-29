@@ -9,10 +9,23 @@
       "title": "Transform Your Digital Future",
       "description": "20+ years of international expertise in digital transformation, from Oracle enterprise systems to founding a $5M+ software agency. I help organizations bridge enterprise governance with startup agility.",
       "stat1": "Data",
-      "stat2": "CRM / ERP",
+      "stat2": "CRM/ERP",
       "stat3": "Software Development",
       "stat4": "Business Optimization",
       "cta": "Start Your Transformation"
+    },
+    "visualCard": {
+      "name": "Baptiste Leroux",
+      "subtitle": "Digital Leader & IT Strategist",
+      "customerSatisfaction": "Customer Satisfaction",
+      "highestPriority": "Highest Priority",
+      "projectsDelivered": "Projects Delivered",
+      "projectsCount": "100+",
+      "teamScale": "Team Scale",
+      "teamScaleValue": "4→50+",
+      "globalReach": "Global Reach",
+      "globalReachValue": "3 Continents",
+      "quote": "Bridging cultures, scaling teams, delivering results"
     },
     "nav": {
       "overview": "Overview",
