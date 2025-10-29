@@ -45,21 +45,17 @@ const Header = () => {
       <header className="glass-nav sticky top-0 z-50 border-b border-white/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-3">
-              <Link href="/" className="flex items-center space-x-3 hover-glow rounded-lg p-2 transition-all duration-300">
-                <div className="relative w-12 h-12">
+            <div className="flex items-center">
+              <Link href="/" className="hover-glow rounded-lg p-2 transition-all duration-300">
+                <div className="relative w-[200px] h-[60px]">
                   <Image
-                    src="/alpa-strategie-logo.svg"
-                    alt="Alpa Strategie logo"
-                    title="Alpa Strategie"
+                    src="/Logo - Alpa Strategie - 200x60 px.png"
+                    alt="Alpa Stratégie"
+                    title="Alpa Stratégie"
                     fill
                     className="object-contain"
                     priority
                   />
-                </div>
-                <div>
-                  <h1 className="text-xl font-bold text-gray-900">{t.header.title}</h1>
-                  <p className="text-sm gradient-text-blue font-medium">{t.header.subtitle}</p>
                 </div>
               </Link>
             </div>

@@ -1,0 +1,119 @@
+# Memory Bank - Alpa Stratégie Website
+
+## Project Overview
+- **Project Name**: Alpa Stratégie Website
+- **Type**: Next.js Web Application
+- **Repository**: git@github.com:alpa-strategie/website.git
+- **Latest Commit**: 0592a78f3414ad5bbb16c4b792a988d4a8e0c951
+- **Primary Language**: TypeScript/React
+- **Framework**: Next.js (with App Router)
+
+## Project Structure
+```
+/home/baptiste/Documents/website/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx          # Root layout
+│   │   ├── page.tsx            # Home page
+│   │   ├── globals.css         # Global styles
+│   │   ├── about/              # About page
+│   │   ├── packages/           # Packages page
+│   │   ├── services/           # Services page
+│   │   └── translations/       # i18n files (en.json, fr.json)
+│   └── components/
+│       ├── Header.tsx          # Navigation header
+│       ├── Footer.tsx          # Site footer
+│       ├── Layout.tsx          # Layout wrapper
+│       └── LanguageProvider.tsx # Language context
+├── public/                     # Static assets
+└── .clinerules/               # Cline configuration
+```
+
+## Key Features
+- **Multi-language Support**: French (default) and English translations
+- **Pages**: Home, About, Packages, Services
+- **Responsive Design**: Using Tailwind CSS
+- **Type Safety**: Full TypeScript implementation
+
+## Technology Stack
+- **Framework**: Next.js (latest)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Package Manager**: npm
+- **Linting**: ESLint
+
+## Development Guidelines
+- Use TypeScript for all new files
+- Follow Next.js App Router conventions
+- Maintain translation files for both English and French
+- Keep components modular and reusable
+- Use Tailwind CSS for styling
+
+## Important Decisions
+*Document key architectural and design decisions here*
+
+### Initial Setup
+- **Date**: 2025-10-28
+- **Decision**: Memory Bank initialized to track project evolution
+- **Rationale**: Maintain context and history for AI-assisted development
+
+### MCP Server Installation
+- **Date**: 2025-10-28
+- **Decision**: Installed perplexity-mcp research assistant server
+- **Location**: `/home/baptiste/Documents/Cline/MCP/perplexity-mcp`
+- **Rationale**: Enable AI-powered research capabilities for documentation lookup, API discovery, and code modernization checks directly within development workflow
+
+## MCP Servers
+*Connected Model Context Protocol servers extending AI capabilities*
+
+### github.com/pashpashpash/perplexity-mcp
+- **Purpose**: Research assistant using Perplexity's Sonar Pro API
+- **Location**: `/home/baptiste/Documents/Cline/MCP/perplexity-mcp`
+- **Status**: Active and configured
+- **Available Tools**:
+  1. `search` - General search with detail levels (brief/normal/detailed)
+  2. `get_documentation` - Retrieve documentation for technologies/libraries/APIs
+  3. `find_apis` - Discover and evaluate APIs for integration
+  4. `check_deprecated_code` - Analyze code for deprecated features
+- **Use Cases**: 
+  - Research current best practices and technologies
+  - Get up-to-date documentation during development
+  - Find suitable APIs for new features
+  - Modernize legacy code patterns
+
+### github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking
+- **Purpose**: Chain of Thought reasoning for complex problem-solving
+- **Status**: Active
+
+### github.com/upstash/context7-mcp
+- **Purpose**: Library documentation retrieval
+- **Status**: Active
+
+## Active Context
+*Current work, recent changes, and ongoing tasks*
+
+### Current Session (2025-10-28)
+- Memory Bank initialized
+- Project structure documented
+- MCP research server (perplexity-mcp) installed and tested
+- Ready for development tasks with enhanced research capabilities
+
+## Known Issues
+*Track bugs, technical debt, and areas needing improvement*
+
+- None documented yet
+
+## Future Enhancements
+*Ideas and planned features*
+
+- TBD based on project requirements
+
+## External Resources
+- Next.js Documentation: https://nextjs.org/docs
+- Tailwind CSS: https://tailwindcss.com/docs
+- TypeScript: https://www.typescriptlang.org/docs
+
+## Notes
+- This Memory Bank should be updated regularly to maintain accurate project context
+- Add new sections as needed for project-specific requirements
+- Keep information concise but comprehensive

@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import { Target, Globe, Zap, Database, Users, Code, TrendingUp } from 'lucide-react';
 import Layout from '../components/Layout';
@@ -10,6 +10,29 @@ import { translations } from './translations';
 const HomeContent = () => {
   const { language } = useLanguage();
   const t = translations[language];
+
+  useEffect(() => {
+    const highlightSection = () => {
+      const hash = window.location.hash;
+      if (hash === '#why-choose') {
+        const element = document.getElementById('why-choose');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          element.classList.add('bg-yellow-100/60', 'ring-2', 'ring-yellow-300', 'rounded-lg', 'transition-all', 'duration-300');
+          setTimeout(() => {
+            element.classList.remove('bg-yellow-100/60', 'ring-2', 'ring-yellow-300');
+          }, 2500);
+        }
+      }
+    };
+
+    highlightSection();
+    window.addEventListener('hashchange', highlightSection);
+
+    return () => {
+      window.removeEventListener('hashchange', highlightSection);
+    };
+  }, []);
 
   return (
     <>
@@ -34,19 +57,19 @@ const HomeContent = () => {
               
               {/* Stats Row */}
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-                <div className="modern-card px-4 py-3 rounded-xl text-center hover-lift">
+                <div className="modern-card px-3 py-3 rounded-xl text-center hover-lift">
                   <Database className="w-6 h-6 text-blue-500 mx-auto mb-2" aria-label="Data expertise" />
                   <span className="gradient-text font-bold text-lg block">{t.hero.stat1}</span>
                 </div>
-                <div className="modern-card px-4 py-3 rounded-xl text-center hover-lift">
+                <div className="modern-card px-3 py-3 rounded-xl text-center hover-lift">
                   <Users className="w-6 h-6 text-blue-500 mx-auto mb-2" aria-label="CRM expertise" />
                   <span className="gradient-text font-bold text-lg block">{t.hero.stat2}</span>
                 </div>
-                <div className="modern-card px-4 py-3 rounded-xl text-center hover-lift">
+                <div className="modern-card px-3 py-3 rounded-xl text-center hover-lift">
                   <Code className="w-6 h-6 text-blue-500 mx-auto mb-2" aria-label="Software development expertise" />
-                  <span className="gradient-text font-bold text-lg block">{t.hero.stat3}</span>
+                  <span className="gradient-text font-bold text-lg block break-words">{t.hero.stat3}</span>
                 </div>
-                <div className="modern-card px-4 py-3 rounded-xl text-center hover-lift">
+                <div className="modern-card px-3 py-3 rounded-xl text-center hover-lift">
                   <TrendingUp className="w-6 h-6 text-blue-500 mx-auto mb-2" aria-label="Business optimization expertise" />
                   <span className="gradient-text font-bold text-lg block">{t.hero.stat4}</span>
                 </div>
@@ -61,7 +84,7 @@ const HomeContent = () => {
                   {t.hero.cta}
                 </a>
                 <a 
-                  href="/about" 
+                  href="#why-choose" 
                   className="btn-gradient-outline px-8 py-4 rounded-xl font-semibold text-center inline-block"
                 >
                   Learn More
@@ -87,8 +110,8 @@ const HomeContent = () => {
                 
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-3 bg-white/50 rounded-lg">
-                    <span className="text-gray-700 font-medium">Success Rate</span>
-                    <span className="gradient-text font-bold">98%</span>
+                    <span className="text-gray-700 font-medium">Customer Satisfaction</span>
+                    <span className="gradient-text font-bold">Highest Priority</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-white/50 rounded-lg">
                     <span className="text-gray-700 font-medium">Projects Delivered</span>
@@ -118,7 +141,7 @@ const HomeContent = () => {
       {/* Overview Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="space-y-12">
-          <div className="text-center fade-in-up">
+          <div id="why-choose" className="text-center fade-in-up">
             <h3 className="text-3xl font-bold text-gray-900 mb-6">
               <span className="gradient-text">{t.overview.title}</span>
             </h3>
