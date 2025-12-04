@@ -13,6 +13,7 @@ import Header from '@/components/Header';
 interface Message {
   role: 'user' | 'assistant';
   content: string;
+  suggestedQuestions?: string[];
 }
 
 const AiaPageContent = () => {
@@ -121,7 +122,11 @@ const AiaPageContent = () => {
       if (!response.ok) throw new Error('Failed to get response');
 
       const data = await response.json();
-      const assistantMessage: Message = { role: 'assistant', content: data.answer };
+      const assistantMessage: Message = { 
+        role: 'assistant', 
+        content: data.answer,
+        suggestedQuestions: data.suggestedQuestions || []
+      };
       setMessages(prev => [...prev, assistantMessage]);
     } catch (error) {
       console.error('Error sending message:', error);
@@ -268,15 +273,31 @@ const AiaPageContent = () => {
           {isChatActive && messages.length > 0 && (
             <div className="space-y-4">
               {messages.map((message, index) => (
-                <div
-                  key={index}
-                  className={`${
-                    message.role === 'user'
-                      ? 'bg-[#0f3460] text-white ml-8'
-                      : 'bg-white text-gray-800 mr-8 border border-gray-200'
-                  } p-4 rounded-lg shadow-sm`}
-                >
-                  <p className="text-sm whitespace-pre-wrap">{message.content}</p>
+                <div key={index}>
+                  <div
+                    className={`${
+                      message.role === 'user'
+                        ? 'bg-[#0f3460] text-white ml-8'
+                        : 'bg-white text-gray-800 mr-8 border border-gray-200'
+                    } p-4 rounded-lg shadow-sm`}
+                  >
+                    <p className="text-sm whitespace-pre-wrap">{message.content}</p>
+                  </div>
+                  
+                  {message.role === 'assistant' && message.suggestedQuestions && message.suggestedQuestions.length > 0 && index === messages.length - 1 && !isLoading && (
+                    <div className="mr-8 mt-3 space-y-2">
+                      <p className="text-xs text-gray-500 font-medium mb-2">Continue exploring:</p>
+                      {message.suggestedQuestions.map((question, qIndex) => (
+                        <button
+                          key={qIndex}
+                          onClick={() => handleSuggestedQuestion(question)}
+                          className="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg text-left text-xs text-gray-700 hover:bg-gray-100 hover:border-gray-300 transition-all duration-200"
+                        >
+                          {question}
+                        </button>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ))}
               {isLoading && (
