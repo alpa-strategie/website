@@ -312,22 +312,33 @@ Directives :
 - Mettez l'accent sur l'expérience pratique de Baptiste : mise à l'échelle d'équipes 4→50+, gestion P&L de 5M$+, 11 ans d'opérations offshore
 - Basez toujours vos réponses sur la base de connaissances fournie - c'est votre source de vérité`;
 
-    const completion = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      stream: false,
-      response_format: { type: "json_object" },
-      messages: [
-        {
-          role: 'system',
-          content: systemPrompt,
-        },
-        ...validMessages,
-      ],
-      temperature: 0.7,
-      max_tokens: 1000,
-    });
+    console.log('🤖 [AIA API] Calling OpenAI with', validMessages.length, 'messages...');
+    console.log('🤖 [AIA API] Model: gpt-4o-mini');
+    
+    let completion;
+    try {
+      completion = await openai.chat.completions.create({
+        model: 'gpt-4o-mini',
+        stream: false,
+        response_format: { type: "json_object" },
+        messages: [
+          {
+            role: 'system',
+            content: systemPrompt,
+          },
+          ...validMessages,
+        ],
+        temperature: 0.7,
+        max_tokens: 1000,
+      });
+      console.log('✅ [AIA API] OpenAI call completed successfully');
+    } catch (openaiError) {
+      console.error('❌ [AIA API] OpenAI call failed:', openaiError);
+      throw openaiError;
+    }
 
     const rawMessage = completion.choices[0]?.message?.content || '{}';
+    console.log('📝 [AIA API] Raw OpenAI response length:', rawMessage.length, 'characters');
     let answer: string;
     let suggestedQuestions: string[] = [];
 

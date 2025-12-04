@@ -27,7 +27,7 @@ This guide will help you set up the new RAG (Retrieval-Augmented Generation) sys
 2. Sign up / Log in
 3. Click **"Create Database"** → Select **"Vector"**
 4. Configuration:
-   - **Name**: `aia-knowledge`
+   - **Name**: `aia-brain`
    - **Region**: Choose closest to your users (e.g., EU if Europe-based)
    - **Dimensions**: `1536` (for OpenAI text-embedding-3-small)
    - **Distance Metric**: `COSINE`
