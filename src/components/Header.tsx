@@ -39,10 +39,15 @@ const Header = () => {
     { href: '/packages', label: t.nav.packages }
   ];
 
+  const isAiaPage = pathname === '/aia';
+  const headerClass = isAiaPage 
+    ? "bg-white sticky top-0 z-50 border-b border-gray-200"
+    : "glass-nav sticky top-0 z-50 border-b border-white/20";
+
   return (
     <>
       {/* Header */}
-      <header className="glass-nav sticky top-0 z-50 border-b border-white/20">
+      <header className={headerClass}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
