@@ -553,6 +553,52 @@
           "Tell me about his expertise areas",
           "How can Baptiste help my organization?"
         ]
+      },
+      "dynamicQuestions": {
+        "recruiter": [
+          "Can he work as {{role}}?",
+          "Has he already worked in the {{secteur}} sector?",
+          "Has he completed missions for {{type_entreprise}}?"
+        ],
+        "client": [
+          "Does he work on projects related to {{projet_ou_defi}}?",
+          "Can he support a scope around {{domaine_intervention}}?",
+          "Does he have experience in {{contexte_organisationnel}} contexts?"
+        ],
+        "partner": [
+          "Does he work on missions involving a {{role}} role with clients?",
+          "Has he contributed to projects in the {{secteur}} sector through a partner or agency?",
+          "Does he have experience in {{mode_collaboration}} collaboration contexts?"
+        ],
+        "investor": [
+          "Does he conduct {{type_due_diligence}} analyses to evaluate teams or products?",
+          "Has he supported {{profil_societe}} companies during critical growth or turnaround phases?",
+          "Does he have relevant experience examining issues related to {{enjeu_strategique}}?"
+        ],
+        "curious": [
+          "Does he work on topics related to {{projet_ou_defi}}?",
+          "Does he have experience in {{contexte_tech_ou_produit}} environments?",
+          "Can he provide insights on topics around {{thematique}}?"
+        ],
+        "other": [
+          "Does he work on topics related to {{projet_ou_defi}}?",
+          "Does he have experience in {{contexte_tech_ou_produit}} environments?",
+          "Can he provide insights on topics around {{thematique}}?"
+        ]
       }
+    },
+    "placeholderDefaults": {
+      "role": "consultant",
+      "secteur": "various sectors",
+      "type_entreprise": "various companies",
+      "projet_ou_defi": "digital transformation",
+      "domaine_intervention": "digital transformation",
+      "contexte_organisationnel": "various contexts",
+      "mode_collaboration": "agency partnership",
+      "type_due_diligence": "technology due diligence",
+      "profil_societe": "various companies",
+      "enjeu_strategique": "strategic challenges",
+      "contexte_tech_ou_produit": "technology environments",
+      "thematique": "digital strategy"
     }
   }

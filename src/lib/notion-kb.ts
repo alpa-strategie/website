@@ -253,6 +253,131 @@ Use the scheduling link to select a convenient time. You'll receive a confirmati
 Contact: Based in Paris, France. Available for projects across Europe.`;
 }
 
+export async function fetchPsychometricProfilePage(): Promise<string> {
+  const pageId = process.env.NOTION_PAGE_ID_PSYCHOMETRIC_PROFILE;
+  
+  if (!pageId || !process.env.NOTION_TOKEN) {
+    console.warn('⚠️ [PSYCHOMETRIC] Psychometric profile page not configured, skipping');
+    return '';
+  }
+
+  try {
+    console.log('🧠 [PSYCHOMETRIC] Fetching psychometric profile page...');
+    
+    const blocksResponse = await fetch(`https://api.notion.com/v1/blocks/${pageId}/children?page_size=100`, {
+      headers: {
+        'Authorization': `Bearer ${process.env.NOTION_TOKEN}`,
+        'Notion-Version': '2022-06-28',
+      },
+    });
+
+    if (!blocksResponse.ok) {
+      console.error(`❌ [PSYCHOMETRIC] Failed to fetch page: ${blocksResponse.status}`);
+      return '';
+    }
+
+    const blocksData = await blocksResponse.json() as { results: unknown[] };
+    let content = '';
+    
+    for (const block of blocksData.results) {
+      if (typeof block === 'object' && block !== null && 'type' in block) {
+        const blockType = (block as { type: string }).type;
+        const blockData = (block as Record<string, unknown>)[blockType];
+
+        if (blockData && typeof blockData === 'object' && 'rich_text' in blockData) {
+          const richText = blockData.rich_text as Array<{ plain_text: string }>;
+          const text = richText.map((rt) => rt.plain_text).join('');
+          if (text) content += text + '\n';
+        }
+      }
+    }
+
+    console.log(`✅ [PSYCHOMETRIC] Profile page content: ${content.length} characters`);
+    return content.trim();
+  } catch (error) {
+    console.error('❌ [PSYCHOMETRIC] Error fetching profile page:', error);
+    return '';
+  }
+}
+
+export async function queryPsychometricMetadataDB(): Promise<Array<{
+  id: string;
+  text: string;
+  metadata: Record<string, string>;
+}>> {
+  const dbId = process.env.NOTION_DB_ID_PSYCHOMETRIC_METADATA;
+  
+  if (!dbId || !process.env.NOTION_TOKEN) {
+    console.warn('⚠️ [PSYCHOMETRIC] Psychometric metadata DB not configured, skipping');
+    return [];
+  }
+
+  try {
+    console.log('🧠 [PSYCHOMETRIC] Querying psychometric metadata database...');
+    
+    const response = await fetch('https://api.notion.com/v1/databases/' + dbId + '/query', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${process.env.NOTION_TOKEN}`,
+        'Notion-Version': '2022-06-28',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        page_size: 100,
+      }),
+    });
+
+    if (!response.ok) {
+      console.error(`❌ [PSYCHOMETRIC] Failed to query metadata DB: ${response.status}`);
+      return [];
+    }
+
+    const data = await response.json() as { results: unknown[] };
+    const rows: Array<{ id: string; text: string; metadata: Record<string, string> }> = [];
+
+    for (const page of data.results) {
+      if (typeof page === 'object' && page !== null && 'properties' in page && 'id' in page) {
+        const pageWithProps = page as { id: string; properties: Record<string, unknown> };
+        const properties = pageWithProps.properties;
+        
+        const metadata: Record<string, string> = {
+          source: 'psychometric_metadata',
+        };
+        
+        const textParts: string[] = [];
+
+        for (const [propName, propValue] of Object.entries(properties)) {
+          const value = extractPropertyValue(propValue);
+          if (value) {
+            const key = propName.toLowerCase().replace(/\s+/g, '');
+            metadata[key] = value;
+            
+            if (['Name', 'Factor', 'Interpretation', 'KeywordsForAI'].includes(propName)) {
+              textParts.push(`${propName}: ${value}`);
+            }
+          }
+        }
+
+        const text = textParts.join(' | ');
+        
+        if (text) {
+          rows.push({
+            id: pageWithProps.id,
+            text,
+            metadata,
+          });
+        }
+      }
+    }
+
+    console.log(`✅ [PSYCHOMETRIC] Retrieved ${rows.length} metadata rows`);
+    return rows;
+  } catch (error) {
+    console.error('❌ [PSYCHOMETRIC] Error querying metadata DB:', error);
+    return [];
+  }
+}
+
 function getFallbackKnowledgeBase(): string {
   return `# Baptiste Leroux - Alpa Stratégie
 

@@ -1,6 +1,6 @@
 import { Index } from '@upstash/vector';
 import OpenAI from 'openai';
-import { getKnowledgeBase } from './notion-kb';
+import { getKnowledgeBase, fetchPsychometricProfilePage, queryPsychometricMetadataDB } from './notion-kb';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY!,
@@ -8,9 +8,13 @@ const openai = new OpenAI({
 
 interface ChunkMetadata {
   text: string;
-  source: 'knowledge' | 'missions' | 'expertise' | 'faqs';
+  source: 'knowledge' | 'missions' | 'expertise' | 'faqs' | 'psychometric_profile' | 'psychometric_metadata';
   pageTitle?: string;
   category?: string;
+  factor?: string;
+  facetname?: string;
+  strengthcategory?: string;
+  archetypemapping?: string;
   [key: string]: string | undefined;
 }
 
@@ -78,16 +82,115 @@ export async function indexNotionToUpstash(): Promise<IndexingResult> {
     console.log(`   ✓ Uploaded ${i + batch.length}/${allVectors.length} vectors`);
   }
   
+  console.log(`\n🧠 [INDEXER] Indexing psychometric data...`);
+  const profileChunks = await indexPsychometricProfile(vectorIndex, openai);
+  const metadataChunks = await indexPsychometricMetadata(vectorIndex, openai);
+  
+  const totalChunks = chunks.length + profileChunks + metadataChunks;
   const duration = Date.now() - startTime;
   
-  console.log(`✅ [INDEXER] Complete! Duration: ${duration}ms`);
+  console.log(`\n✅ [INDEXER] Complete! Total: ${totalChunks} chunks (KB: ${chunks.length}, Profile: ${profileChunks}, Metadata: ${metadataChunks})`);
+  console.log(`⏱️  [INDEXER] Duration: ${duration}ms`);
   
   return {
     success: true,
-    totalChunks: chunks.length,
-    databases: ['knowledge', 'missions', 'expertise', 'faqs'],
+    totalChunks,
+    databases: ['knowledge', 'missions', 'expertise', 'faqs', 'psychometric_profile', 'psychometric_metadata'],
     duration
   };
+}
+
+async function indexPsychometricProfile(
+  vectorIndex: Index,
+  openaiClient: OpenAI
+): Promise<number> {
+  try {
+    const profileContent = await fetchPsychometricProfilePage();
+    
+    if (!profileContent) {
+      console.log('⏭️  [PSYCHOMETRIC] No profile content, skipping');
+      return 0;
+    }
+
+    console.log(`✂️ [PSYCHOMETRIC] Chunking profile content...`);
+    const chunks = chunkText(profileContent, { chunkSize: 500, overlap: 50 });
+    
+    const profileChunks = chunks.map((chunk, idx) => ({
+      ...chunk,
+      id: `psych-profile-${idx}`,
+      metadata: {
+        ...chunk.metadata,
+        source: 'psychometric_profile' as const,
+        language: 'FR',
+      }
+    }));
+
+    console.log(`🧠 [PSYCHOMETRIC] Generating embeddings for ${profileChunks.length} profile chunks...`);
+    
+    const embeddings = await Promise.all(
+      profileChunks.map(chunk =>
+        openaiClient.embeddings.create({
+          model: "text-embedding-3-small",
+          input: chunk.text
+        })
+      )
+    );
+    
+    const vectors = profileChunks.map((chunk, idx) => ({
+      id: chunk.id,
+      vector: embeddings[idx].data[0].embedding,
+      metadata: chunk.metadata
+    }));
+
+    console.log(`📤 [PSYCHOMETRIC] Uploading ${vectors.length} profile vectors...`);
+    await vectorIndex.upsert(vectors);
+    
+    console.log(`✅ [PSYCHOMETRIC] Profile indexed: ${vectors.length} chunks`);
+    return vectors.length;
+  } catch (error) {
+    console.error('❌ [PSYCHOMETRIC] Error indexing profile:', error);
+    return 0;
+  }
+}
+
+async function indexPsychometricMetadata(
+  vectorIndex: Index,
+  openaiClient: OpenAI
+): Promise<number> {
+  try {
+    const metadataRows = await queryPsychometricMetadataDB();
+    
+    if (metadataRows.length === 0) {
+      console.log('⏭️  [PSYCHOMETRIC] No metadata rows, skipping');
+      return 0;
+    }
+
+    console.log(`🧠 [PSYCHOMETRIC] Generating embeddings for ${metadataRows.length} metadata rows...`);
+    
+    const embeddings = await Promise.all(
+      metadataRows.map(row =>
+        openaiClient.embeddings.create({
+          model: "text-embedding-3-small",
+          input: row.text
+        })
+      )
+    );
+    
+    const vectors = metadataRows.map((row, idx) => ({
+      id: `psych-meta-${idx}`,
+      vector: embeddings[idx].data[0].embedding,
+      metadata: row.metadata
+    }));
+
+    console.log(`📤 [PSYCHOMETRIC] Uploading ${vectors.length} metadata vectors...`);
+    await vectorIndex.upsert(vectors);
+    
+    console.log(`✅ [PSYCHOMETRIC] Metadata indexed: ${vectors.length} rows`);
+    return vectors.length;
+  } catch (error) {
+    console.error('❌ [PSYCHOMETRIC] Error indexing metadata:', error);
+    return 0;
+  }
 }
 
 function chunkText(

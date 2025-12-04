@@ -553,6 +553,52 @@
           "Parlez-moi de ses domaines d'expertise",
           "Comment Baptiste peut-il aider mon organisation ?"
         ]
+      },
+      "dynamicQuestions": {
+        "recruiter": [
+          "Peut-il intervenir en tant que {{role}} ?",
+          "Est-il déjà intervenu dans le secteur {{secteur}} ?",
+          "A-t-il déjà réalisé des missions pour {{type_entreprise}} ?"
+        ],
+        "client": [
+          "Intervient-il sur des projets liés à {{projet_ou_defi}} ?",
+          "Peut-il accompagner un périmètre autour de {{domaine_intervention}} ?",
+          "A-t-il de l'expérience dans un contexte de {{contexte_organisationnel}} ?"
+        ],
+        "partner": [
+          "Intervient-il sur des missions impliquant un rôle de {{role}} auprès de clients ?",
+          "A-t-il déjà contribué à des projets dans le secteur {{secteur}} via un partenaire ou une agence ?",
+          "Possède-t-il de l'expérience dans des contextes de collaboration de type {{mode_collaboration}} ?"
+        ],
+        "investor": [
+          "Intervient-il dans des analyses de {{type_due_diligence}} pour évaluer des équipes ou des produits ?",
+          "A-t-il déjà accompagné des entreprises de type {{profil_societe}} dans une phase critique de croissance ou de redressement ?",
+          "Dispose-t-il d'une expérience pertinente pour examiner des enjeux liés à {{enjeu_strategique}} ?"
+        ],
+        "curious": [
+          "Intervient-il sur des sujets liés à {{projet_ou_defi}} ?",
+          "A-t-il de l'expérience dans des environnements de type {{contexte_tech_ou_produit}} ?",
+          "Peut-il apporter un éclairage sur des enjeux autour de {{thematique}} ?"
+        ],
+        "other": [
+          "Intervient-il sur des sujets liés à {{projet_ou_defi}} ?",
+          "A-t-il de l'expérience dans des environnements de type {{contexte_tech_ou_produit}} ?",
+          "Peut-il apporter un éclairage sur des enjeux autour de {{thematique}} ?"
+        ]
       }
+    },
+    "placeholderDefaults": {
+      "role": "consultant",
+      "secteur": "divers secteurs",
+      "type_entreprise": "diverses entreprises",
+      "projet_ou_defi": "transformation digitale",
+      "domaine_intervention": "transformation digitale",
+      "contexte_organisationnel": "divers contextes",
+      "mode_collaboration": "collaboration agence",
+      "type_due_diligence": "due diligence technologique",
+      "profil_societe": "diverses entreprises",
+      "enjeu_strategique": "enjeux stratégiques",
+      "contexte_tech_ou_produit": "environnements technologiques",
+      "thematique": "stratégie digitale"
     }
   }

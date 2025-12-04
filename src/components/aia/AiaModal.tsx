@@ -8,6 +8,7 @@ import { useLanguage } from '@/components/LanguageProvider';
 import translations from '@/app/translations';
 import { VisitorProfile, VisitorRole, VisitorIndustry, VisitorInterest, ROLE_KEY_MAP } from '@/types/visitor';
 import { setAiaSeen, setVisitorProfile, getVisitorProfile } from '@/lib/aia-storage';
+import { getDynamicQuestions } from '@/lib/question-substitution';
 import SingleSelect from './SingleSelect';
 import MultiSelect from './MultiSelect';
 
@@ -136,9 +137,16 @@ export default function AiaModal({ onClose }: AiaModalProps) {
       return currentSuggestions;
     }
     
-    const roleKey = profile.roleKey ?? 'default';
+    const roleKey = profile.roleKey ?? 'other';
+    
+    const hasMinimumContext = profile.visitorRole && profile.industry;
+    
+    if (hasMinimumContext) {
+      return getDynamicQuestions(roleKey, profile, language);
+    }
+    
     const questions = t.suggestedQuestions[roleKey as keyof typeof t.suggestedQuestions];
-    return questions || t.suggestedQuestions.default;
+    return questions || t.suggestedQuestions.other;
   };
 
   const handleSendMessage = async (messageText?: string) => {
