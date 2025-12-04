@@ -14,6 +14,20 @@ It’s engineered for clarity, performance, and AI-assisted maintainability thro
 | Package Manager | **npm**                  | Dependency & scripts management |
 | Build System    | **Turbopack / Webpack**  | Fast dev + optimized bundles    |
 
+## AI & Aïa Integration
+
+### AI Runtime
+- Implement `/api/aia` as Next.js Route Handler.
+- Use an LLM provider (e.g. OpenAI) via `OPENAI_API_KEY` (or equivalent).
+- Responses grounded with content retrieved from Notion.
+
+### Notion Integration
+- Notion used as knowledge base:
+  - `NOTION_DB_ID_KNOWLEDGE`
+  - `NOTION_DB_ID_MISSIONS`
+  - `NOTION_DB_ID_EXPERTISE`
+- All read via server-side code or MCP Notion server.
+- Future: sync tasks automated by Cline.
 
 ### Development Tools
 - **IDE**: Visual Studio Code (+ Cline AI extension)

@@ -197,6 +197,19 @@ No active bugs or issues reported at this time.
 
 ---
 
+## AI Experience Roadmap (Aïa)
+
+### In Progress
+- [ ] Design Aïa fullscreen onboarding UI (FR/EN)
+- [ ] Implement Aïa modal + launcher with localStorage-based first-visit logic
+- [ ] Create `/api/aia` handler using Notion KB + LLM
+- [ ] Add suggested questions area powered by Notion or AI
+- [ ] Ensure graceful fallback to classic navigation
+
+### Done (to keep in sync)
+- Aïa concept validated as core differentiator
+- Notion MCP and Memory Bank ready to support AI-driven UX
+
 ## Next Milestones
 
 1. **Short-term**: Maintain current functionality, address any user feedback

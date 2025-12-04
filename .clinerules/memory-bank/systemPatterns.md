@@ -60,6 +60,70 @@
 └── middleware.ts                 # Locale detection & redirect to /[locale]
 ```
 
+## AI Agent Architecture (Aïa)
+
+### Key Components
+
+- `components/aia/AiaLauncher.tsx`
+  - Renders bottom-right chat icon.
+  - Opens/closes fullscreen Aïa modal.
+  - Respects localStorage flag (e.g. `aia_seen`).
+
+- `components/aia/AiaModal.tsx`
+  - Fullscreen overlay for first-time + subsequent interactions.
+  - Sections:
+    - Intro (Baptiste + Aïa)
+    - Context selector (role, industry, interest)
+    - Suggested questions (3 dynamic or Notion-backed)
+    - Chat interface (messages + input in bottom third)
+  - Closes back to normal site; shows tooltip hint.
+
+- `components/aia/AiaChat.tsx`
+  - Manages messages state.
+  - Calls `/api/aia` with:
+    - user message,
+    - selected context,
+    - language/locale.
+
+- `app/api/aia/route.ts`
+  - Server route.
+  - Loads knowledge from Notion.
+  - Calls LLM with:
+    - system prompt (Aïa persona),
+    - Notion context,
+    - visitor context.
+
+### Interaction Patterns
+
+1. **First Visit**
+   - Aïa modal auto-opens once (if no `aia_seen`).
+   - User can:
+     - Configure context and chat,
+     - Or close and browse.
+
+2. **Subsequent Visits**
+   - Aïa starts minimized as icon.
+   - No forced fullscreen unless user clicks.
+
+3. **Suggested Questions Pattern**
+   - Fetch from Notion “FAQ / Entry Points” table
+   - Or generate via model from current context.
+   - Render as pill buttons; clicking sends as prompt.
+
+4. **Fail-Safe**
+   - If Aïa fails, fall back to:
+     - Links to Profile, Expertise, Missions, Contact.
+
+## Design & Code Principles for Aïa
+
+- Use **Server Components** where possible; hydrate only interactive parts.
+- Keep all Aïa strings translatable via i18n.
+- Ensure modal is accessible:
+  - Focus trap, ESC to close, aria labels.
+- Keep separation:
+  - `aia` components isolated,
+  - `/api/aia` encapsulates AI logic.
+
 ## Key Design Patterns
 
 ### 1. Internationalization via React Context

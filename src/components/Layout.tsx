@@ -4,6 +4,7 @@ import React from 'react';
 import { LanguageProvider } from './LanguageProvider';
 import Header from './Header';
 import Footer from './Footer';
+import AiaLauncher from './aia/AiaLauncher';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -23,6 +24,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           {children}
         </main>
         <Footer />
+        <AiaLauncher />
       </div>
     </LanguageProvider>
   );

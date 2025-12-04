@@ -101,7 +101,9 @@ const HomeContent = () => {
                       src="/profile.jpg"
                       alt="Baptiste Leroux - Professional Photo"
                       fill
+                      sizes="80px"
                       className="object-cover"
+                      loading="lazy"
                     />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{t.visualCard.name}</h3>

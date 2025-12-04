@@ -383,5 +383,176 @@
       "title": "Baptiste Leroux",
       "subtitle": "Consultant en Leadership IT et Livraison Globale",
       "location": "Basé à Paris, France • Disponible pour des projets à travers l'Europe"
+    },
+    "chat": {
+      "title": "Assistant IA",
+      "subtitle": "Posez-moi des questions sur les services de Baptiste",
+      "placeholder": "Tapez votre question ici...",
+      "send": "Envoyer",
+      "close": "Fermer",
+      "welcome": "Bonjour ! Je suis là pour vous aider à découvrir les services de conseil de Baptiste Leroux. Que souhaitez-vous savoir ?",
+      "error": "Désolé, une erreur s'est produite. Veuillez réessayer.",
+      "buttonLabel": "Discuter avec l'IA"
+    },
+    "aia": {
+      "title": "Rencontrez Aïa, Votre Guide Intelligente",
+      "subtitle": "Je suis là pour vous aider à découvrir comment Baptiste peut accélérer votre transformation digitale",
+      "intro": "Bonjour ! Je suis Aïa, l'assistante intelligente d'Alpa Stratégie. Je connais l'expertise de Baptiste Leroux sur le bout des doigts—de ses 20+ années à diriger des équipes internationales à la mise à l'échelle d'agences logicielles de 4 à 50+ personnes.",
+      "contextPrompt": "Pour vous fournir les conseils les plus pertinents, parlez-moi un peu de vous :",
+      "chatPlaceholder": "Posez-moi des questions sur les services de Baptiste...",
+      "send": "Envoyer",
+      "close": "Fermer",
+      "closeTooltip": "Vous pouvez rouvrir Aïa à tout moment avec l'icône de chat",
+      "welcome": "Je suis prête à vous aider ! Que souhaitez-vous savoir sur les services de conseil de Baptiste ?",
+      "error": "Je m'excuse, mais j'ai des difficultés de connexion en ce moment. Veuillez actualiser ou contacter Baptiste directement.",
+      "buttonLabel": "Discuter avec Aïa",
+      "suggestedQuestionsTitle": "Voici quelques questions avec lesquelles je peux vous aider :",
+      "suggestedQuestions": {
+        "default": [
+          "Qui est Baptiste Leroux et que fait-il ?",
+          "Quel type de missions prend-il habituellement en tant que PM / PMO / CTO / CPTO ?",
+          "Dans quelles situations est-il pertinent de travailler avec lui ?"
+        ],
+        "recruiter": [
+          "Quels types de missions intérimaires PMO / CTO / CPTO Baptiste prend-il habituellement ?",
+          "Dans quels types d'organisations et secteurs a-t-il réalisé des missions réussies ?",
+          "Pouvez-vous résumer ses principales réalisations et son impact typique sur les missions ?"
+        ],
+        "client": [
+          "De quelle manière Baptiste peut-il aider une entreprise comme la nôtre avec la transformation digitale ou la gouvernance IT ?",
+          "À quoi ressemble un engagement typique avec Baptiste, du premier contact à la livraison ?",
+          "Comment travaille-t-il avec les équipes internes (IT, produit, business) pour générer des résultats mesurables ?"
+        ],
+        "partner": [
+          "Comment Baptiste peut-il collaborer avec nous sur des projets clients (rôles, périmètre, responsabilités) ?",
+          "Quelle expérience a-t-il dans la mise en place et la gestion d'équipes de livraison offshore ou hybrides ?",
+          "Quels types de modèles de partenariat considère-t-il habituellement avec des cabinets de conseil ou agences ?"
+        ],
+        "investor": [
+          "Comment Baptiste peut-il soutenir un conseil d'administration ou une équipe de direction dans l'évaluation et la réorganisation de l'IT et de la livraison digitale ?",
+          "Quelle expérience a-t-il dans la réalisation de due diligence technologique ou logicielle pour les startups et scale-ups ?",
+          "Comment conseille-t-il sur la construction d'équipes d'ingénierie offshore ou hybrides pour faire évoluer le développement logiciel et l'innovation ?"
+        ],
+        "curious": [
+          "Quelle est l'expérience de Baptiste avec l'externalisation et les équipes de développement offshore ?",
+          "Quelle est l'étendue de ses connaissances technologiques en termes de stacks, outils et plateformes ?",
+          "Comment son parcours combine-t-il le conseil en entreprise avec les environnements startup et scale-up ?"
+        ],
+        "other": [
+          "Qui est Baptiste Leroux et que fait-il ?",
+          "Quel type de missions prend-il habituellement en tant que PM / PMO / CTO / CPTO ?",
+          "Dans quelles situations est-il pertinent de travailler avec lui ?"
+        ]
+      }
+    },
+    "book": {
+      "title": "Réserver une Session Stratégique de 45 Minutes",
+      "subtitle": "Pour les recruteurs, clients et partenaires explorant la transformation digitale, la gouvernance IT, l'excellence PMO ou le conseil CTO/CPTO.",
+      "whatToExpectTitle": "À Quoi S'Attendre de Notre Appel",
+      "whatToExpect": [
+        "Clarifier vos défis actuels et objectifs en transformation digitale ou leadership IT",
+        "Explorer l'approche de Baptiste pour la mise en place PMO, les opérations offshore ou le scaling SaaS",
+        "Évaluer l'adéquation mutuelle et discuter des prochaines étapes potentielles"
+      ],
+      "aiaPrompt": "Préférez explorer avec Aïa d'abord ? Ouvrez l'assistant IA dans le coin inférieur droit."
+    },
+    "onboarding": {
+      "title": "Bienvenue chez Alpa Stratégie",
+      "subtitle": "Baptiste Leroux • Consultant en Stratégie Digitale & Gouvernance IT | PMO / CTO / CPTO | Transformation, Livraison & Performance",
+      "description": "J'ai créé Aïa, l'Agent intelligent Alpa, pour vous aider à explorer mon expertise et mes projets plus rapidement – demandez simplement au lieu de faire défiler.",
+      "exploreWebsite": "Explorer le site web",
+      "alexperience": "ALEXPERIENCE • PROPULSÉ PAR AÏA",
+      "yourContext": "Votre contexte",
+      "contextPrompt": "Pour personnaliser votre expérience, veuillez parler un peu de vous à Aïa.",
+      "privacyNote": "Les sélections sont utilisées uniquement pour le contexte. Aucune donnée n'est stockée.",
+      "askAia": "Demander à Aïa",
+      "poweredBy": "Propulsé par Aïa • Agent Intelligent Alpa • Basé sur du contenu vérifié de Notion",
+      "roleLabel": "Je suis",
+      "rolePlaceholder": "Sélectionnez votre rôle...",
+      "roles": {
+        "recruiter-headhunter": "Recruteur / Chasseur de têtes",
+        "potential-client": "Client Potentiel (Entreprise)",
+        "consulting-partner": "Partenaire Conseil / Agence",
+        "investor-advisor": "Investisseur / Conseiller",
+        "curious": "Visiteur Curieux",
+        "other": "Autre"
+      },
+      "industryLabel": "Industrie/Secteur",
+      "industryPlaceholder": "Sélectionnez votre industrie...",
+      "industries": {
+        "technology-saas": "Technologie / SaaS",
+        "finance-banking": "Finance & Banque",
+        "insurance": "Assurance",
+        "manufacturing": "Industrie",
+        "healthcare-medical": "Santé & Services Médicaux",
+        "events-conference": "Événementiel & Conférences Tech",
+        "education-edtech": "Éducation / EdTech",
+        "environmental-agritech": "Environnement / Agriculture / Agritech",
+        "aviation-aerospace": "Aviation / Aérospatiale",
+        "ngo-social": "ONG / Impact Social",
+        "hospitality-etourism": "Hôtellerie / E-Tourisme",
+        "ecommerce-retail": "E-Commerce / Distribution",
+        "government-public": "Gouvernement / Secteur Public",
+        "other": "Autre"
+      },
+      "interestsLabel": "Intérêts Principaux",
+      "interestsPlaceholder": "Sélectionnez vos intérêts...",
+      "interests": {
+        "it-strategy": "Stratégie IT & Leadership",
+        "cto-cpto-advisory": "Conseil CTO / CPTO",
+        "pmo": "Bureau de Gestion de Projet (PMO)",
+        "digital-factory": "Digital Factory & Gouvernance de Livraison",
+        "saas-development": "Développement Produit SaaS",
+        "software-architecture": "Architecture Logicielle & Modernisation",
+        "offshoring-outsourcing": "Stratégie de Délocalisation & Externalisation",
+        "business-intelligence": "Intelligence d'Affaires & Plateformes de Données",
+        "ux-ui-product": "UX/UI & Découverte Produit",
+        "interim-roles": "Rôles Intérimaires CTO / PMO",
+        "digital-transformation": "Transformation Numérique",
+        "other": "Autre"
+      },
+      "companySizeLabel": "Taille de l'Entreprise (optionnel)",
+      "companySizePlaceholder": "Sélectionnez la taille de l'entreprise",
+      "companySizes": {
+        "startup": "Startup (< 50 employés)",
+        "sme": "PME (50-500 employés)",
+        "enterprise": "Grande Entreprise (500+ employés)"
+      },
+      "submitButton": "Commencer à Discuter",
+      "requiredField": "Ce champ est requis",
+      "selectAtLeastOne": "Veuillez sélectionner au moins un intérêt",
+      "suggestedQuestionsTitle": "Questions suggérées pour vous :",
+      "suggestedQuestions": {
+        "recruiter": [
+          "Quels types de rôles intérimaires Baptiste peut-il occuper ?",
+          "Quelle est sa disponibilité et son modèle d'engagement ?",
+          "Pouvez-vous partager ses principales réalisations et son parcours ?"
+        ],
+        "potential-client": [
+          "Parlez-moi des forfaits de démarrage",
+          "Comment fonctionne la configuration PMO ?",
+          "Quel est le processus d'engagement typique ?"
+        ],
+        "current-client": [
+          "Comment pouvons-nous étendre la portée de notre projet actuel ?",
+          "Quels services supplémentaires sont disponibles ?",
+          "Pouvons-nous discuter de nouvelles initiatives ?"
+        ],
+        "partner": [
+          "Comment pouvons-nous collaborer sur des projets ?",
+          "Quelle est l'expertise de Baptiste en délocalisation ?",
+          "Quelles sont les opportunités de partenariat ?"
+        ],
+        "curious": [
+          "Qu'est-ce qui rend l'approche de Baptiste unique ?",
+          "Parlez-moi de son expérience internationale",
+          "Dans quelles industries a-t-il travaillé ?"
+        ],
+        "other": [
+          "Quels services Baptiste offre-t-il ?",
+          "Parlez-moi de ses domaines d'expertise",
+          "Comment Baptiste peut-il aider mon organisation ?"
+        ]
+      }
     }
   }

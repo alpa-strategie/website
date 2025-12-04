@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { TrendingUp, Users, Database, Building2, BarChart3, Building, Server, GraduationCap, Award, Globe, Users2 } from 'lucide-react';
+import { Database, Building2, BarChart3, Building, Server, GraduationCap, Award, Globe, Users2 } from 'lucide-react';
 import Layout from '../../components/Layout';
 import { useLanguage } from '../../components/LanguageProvider';
 import { translations } from '../translations';

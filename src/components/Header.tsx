@@ -53,6 +53,7 @@ const Header = () => {
                     alt="Alpa Stratégie"
                     title="Alpa Stratégie"
                     fill
+                    sizes="200px"
                     className="object-contain"
                     priority
                   />

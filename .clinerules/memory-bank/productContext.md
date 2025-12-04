@@ -2,80 +2,81 @@
 
 ## Why This Project Exists
 
-The Alpa Stratégie website is the digital home of Baptiste Leroux, consultant in digital strategy, IT governance, and performance delivery.
-Its purpose is to:
-- Build a credible personal brand in the digital transformation and interim management market
-- Present expertise, mission history, and methodology clearly and professionally
-- Support bilingual audiences (FR/EN) across European and international markets
-- Generate qualified professional leads (recruiters, firms, executives)
+The Alpa Stratégie website is the digital home of **Baptiste Leroux**, consultant in digital strategy, IT governance, and performance delivery.
+
+It must:
+- Build a credible, differentiated personal brand,
+- Present expertise, missions, and approach clearly,
+- Support FR/EN audiences,
+- **Demonstrate real-world AI capability** via an integrated assistant (**Aïa**) that can replace traditional “scroll & search” navigation for visitors who choose it.
 
 ## Problems It Solves
 
 ### Business Problems
-1. **Visibility & Positioning**: Absence of a personal platform limits discovery by recruiters and clients.
-2. **Value Communication**: Difficult to explain complex consulting offerings (PMO, CTO, CPTO, transformation) on LinkedIn alone.
-3. **Professional Credibility**: Need to project a consistent, premium identity across all touchpoints.
-4. **Market Expansion**: Serve both French and English markets for maximum reach.
+1. Visibility & Positioning for interim/consulting missions.
+2. Clear explanation of complex offerings (PMO, CTO/CPTO, transformation).
+3. Demonstration of hands-on AI integration capability.
+4. Serving both French and English markets effectively.
 
 ### User Problems
-1. **Information Access**: Visitors need to quickly understand who Baptiste Leroux is and what he delivers.
-2. **Proof of Experience**: Potential clients want to see concrete missions, roles, and outcomes.
-3. **Ease of Contact**: Recruiters and partners need a frictionless way to reach out.
-4. **Language Preference & Responsiveness**: Visitors expect smooth bilingual navigation and full mobile support.
+1. Need fast understanding of who Baptiste is and what he offers.
+2. Need concrete proof of experience (missions, outcomes).
+3. Prefer direct Q&A instead of reading long pages.
+4. Need easy contact; minimal friction.
 
 ## How It Should Work
 
 ### User Experience Goals
 
 #### First-Time Visitor
-- Instantly grasps who Baptiste Leroux is and what he offers.
-- Feels trust and credibility through clean, minimalist design.
-- Can easily switch between French and English.
-- Quickly finds key sections: Expertise, Missions, Contact.
+- Immediately understands Baptiste’s positioning.
+- Sees **Aïa** as a premium, optional AI guide.
+- Can either:
+  - Use Aïa to ask questions,
+  - Or close Aïa and browse classic pages.
 
 #### Returning Visitor
-- Navigates directly to needed sections (e.g., Missions).
-- Finds consistent structure and updated information.
-- Can access new case studies or resources effortlessly.
+- Aïa does **not** aggressively re-block; opens minimized as icon.
+- Can jump straight into chat or navigate to Missions/Expertise.
 
 ### Core User Flows
 
-1. **Language Selection**
-- User lands on root (/), automatically redirected to /fr or /en.
-- Can toggle language anytime in header.
-- Navigation and content update instantly.
-- Language preference persists throughout the session.
+1. **AI Onboarding (Aïa)**
+   - Fullscreen modal on first interaction.
+   - Intro text about Baptiste + Aïa.
+   - Visitor selects:
+     - Role (Recruiter, Client, Partner, etc.)
+     - Industry
+     - Interest (IT strategy, PMO, SaaS, etc.)
+   - Context is stored and sent with all future Aïa prompts.
+   - 3 suggested questions displayed to guide first interaction.
+   - Chat area in lower third of screen.
 
-2. **Expertise Discovery**
-- User visits Expertise page.
-- Reads concise explanations of key roles: PMO, CTO, CPTO, Digital Transformation Director.
-- Understands the value proposition, typical engagement format, and results.
-- Clear CTA to Contact section.
+2. **Classic Navigation**
+   - If user closes Aïa, show normal site (Home, Expertise, Missions, Contact).
+   - Persistent bottom-right icon reopens Aïa in fullscreen modal.
+   - Tooltip briefly explains they can reopen Aïa anytime.
 
-3. **Mission Portfolio**
-- User explores Missions page.
-- Sees structured cards (client, context, results, technologies).
-- Gains confidence from concrete success stories.
+3. **Knowledge Base**
+   - Aïa uses curated content from Notion databases (services, missions, FAQs).
+   - All content maintainable through Notion → reduces code changes.
 
-4. **Contact / Conversion**
-- Prominent “Let’s Talk” button on all pages.
-- Contact page shows professional channels (email, LinkedIn).
-- Optional short form or mailto: link for direct outreach.
+4. **Conversion**
+   - Aïa can propose “next steps”: view Missions, download summary, contact Baptiste.
+   - Classic CTAs remain visible (Contact, LinkedIn).
 
 ## Design Principles
 
-1. **Clarity**: Plain-language storytelling of experience and impact.
-2. **Professionalism**: Minimalist, elegant, executive-level design.
-3. **Authenticity**: Personal yet credible tone (you are the brand).
-4. **Accessibility**: Works perfectly across devices and languages.
-5. **Performance**: Lightweight build, < 3 s load on standard 4G.
-6. **Maintainability**: All text content lives in simple typed data or i18n files.
+1. **Clarity** – Never confusing or gimmicky.
+2. **Professionalism** – Executive-level interface, no noisy bot vibes.
+3. **Control** – User can always opt out of fullscreen Aïa.
+4. **Performance** – Aïa loads efficiently; no heavy blocking scripts.
+5. **Trust** – Transparent about what Aïa can/can’t do; no fake metrics.
+6. **Maintainability** – Knowledge managed in Notion; i18n controlled via typed files.
 
 ## Success Metrics
 
-- Visitors immediately understand the positioning and services.
-- Smooth navigation between all bilingual pages.
-- Pages load in under 3 seconds on mobile.
-- Design feels modern, trustworthy, and consistent with LinkedIn branding.
-- Recruiters and partners can reach Baptiste Leroux in ≤ 2 clicks.
-- Content updates achievable directly from code or Notion sync (no CMS).
+- Visitors can get key answers via Aïa within 1–3 messages.
+- Recruiters can confirm fit within a single Aïa interaction or one scroll.
+- Aïa usage shows engagement without harming bounce/SEO.
+- All Aïa answers grounded in Notion/website content.

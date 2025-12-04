@@ -196,11 +196,34 @@ body {
   }
 }
 
+/* Chat Widget Animations */
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
 /* Accessibility - Respect reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   .floating-animation,
   .fade-in-up,
-  .scale-in {
+  .scale-in,
+  .animate-bounce {
     animation: none;
   }
   
@@ -225,5 +248,23 @@ body {
   
   .modern-card {
     background: rgba(255, 255, 255, 0.95);
+  }
+}
+
+/* Aïa Component Animations */
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

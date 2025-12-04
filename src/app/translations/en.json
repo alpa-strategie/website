@@ -383,5 +383,176 @@
       "title": "Baptiste Leroux",
       "subtitle": "IT Leadership & Global Delivery Consultant",
       "location": "Based in Paris, France • Available for projects across Europe"
+    },
+    "chat": {
+      "title": "AI Assistant",
+      "subtitle": "Ask me anything about Baptiste's services",
+      "placeholder": "Type your question here...",
+      "send": "Send",
+      "close": "Close",
+      "welcome": "Hello! I'm here to help you learn about Baptiste Leroux's consulting services. What would you like to know?",
+      "error": "Sorry, something went wrong. Please try again.",
+      "buttonLabel": "Chat with AI"
+    },
+    "aia": {
+      "title": "Meet Aïa, Your Intelligent Guide",
+      "subtitle": "I'm here to help you discover how Baptiste can accelerate your digital transformation",
+      "intro": "Hello! I'm Aïa, the intelligent assistant for Alpa Stratégie. I know Baptiste Leroux's expertise inside out—from his 20+ years leading international teams to scaling software agencies from 4 to 50+ people.",
+      "contextPrompt": "To give you the most relevant guidance, tell me a bit about yourself:",
+      "chatPlaceholder": "Ask me anything about Baptiste's services...",
+      "send": "Send",
+      "close": "Close",
+      "closeTooltip": "You can reopen Aïa anytime with the chat icon",
+      "welcome": "I'm ready to help! What would you like to know about Baptiste's consulting services?",
+      "error": "I apologize, but I'm having trouble connecting right now. Please try refreshing or contact Baptiste directly.",
+      "buttonLabel": "Chat with Aïa",
+      "suggestedQuestionsTitle": "Here are some questions I can help with:",
+      "suggestedQuestions": {
+        "default": [
+          "Who is Baptiste Leroux and what does he do?",
+          "What kind of missions does he usually take on as PM / PMO / CTO / CPTO?",
+          "In what situations does it make sense to work with him?"
+        ],
+        "recruiter": [
+          "What types of interim PMO / CTO / CPTO missions does Baptiste usually take?",
+          "In what kinds of organizations and sectors has he delivered successful missions?",
+          "Can you summarize his key achievements and typical impact on assignments?"
+        ],
+        "client": [
+          "In what ways can Baptiste help a company like ours with digital transformation or IT governance?",
+          "What does a typical engagement with Baptiste look like, from first contact to delivery?",
+          "How does he work with internal teams (IT, product, business) to drive measurable outcomes?"
+        ],
+        "partner": [
+          "How can Baptiste collaborate with us on client projects (roles, scope, responsibilities)?",
+          "What experience does he have setting up and managing offshore or hybrid delivery teams?",
+          "What types of partnership models does he usually consider with consulting firms or agencies?"
+        ],
+        "investor": [
+          "How can Baptiste support a board or C-level team in assessing and reorganizing IT and digital delivery?",
+          "What experience does he have running technology or software due diligence for startups and scale-ups?",
+          "How does he advise on building offshore or hybrid engineering teams to scale software development and innovation?"
+        ],
+        "curious": [
+          "What is Baptiste's experience with outsourcing and offshore development teams?",
+          "How broad is his technology knowledge across stacks, tools, and platforms?",
+          "How does his background combine corporate consulting with startup and scale-up environments?"
+        ],
+        "other": [
+          "Who is Baptiste Leroux and what does he do?",
+          "What kind of missions does he usually take on as PM / PMO / CTO / CPTO?",
+          "In what situations does it make sense to work with him?"
+        ]
+      }
+    },
+    "book": {
+      "title": "Book a 45-Minute Strategy Session",
+      "subtitle": "For recruiters, clients, and partners exploring digital transformation, IT governance, PMO excellence, or CTO/CPTO advisory.",
+      "whatToExpectTitle": "What to Expect from Our Call",
+      "whatToExpect": [
+        "Clarify your current challenges and objectives in digital transformation or IT leadership",
+        "Explore Baptiste's approach to PMO setup, offshore operations, or SaaS scaling",
+        "Assess mutual fit and discuss potential next steps"
+      ],
+      "aiaPrompt": "Prefer to explore with Aïa first? Open the AI assistant in the bottom-right corner."
+    },
+    "onboarding": {
+      "title": "Welcome to Alpa Stratégie",
+      "subtitle": "Baptiste Leroux • Digital Strategy & IT Governance Consultant | PMO / CTO / CPTO | Transformation, Delivery & Performance",
+      "description": "I created Aïa, the Alpa intelligent Agent, to help you explore my expertise and projects faster – just ask instead of scrolling.",
+      "exploreWebsite": "Explore the website",
+      "alexperience": "ALEXPERIENCE • POWERED BY AÏA",
+      "yourContext": "Your context",
+      "contextPrompt": "To personalize your experience, please tell Aïa a bit about you.",
+      "privacyNote": "Selections are used only for context. No data is stored.",
+      "askAia": "Ask Aïa",
+      "poweredBy": "Powered by Aïa • Alpa Intelligent Agent • Based on verified content from Notion",
+      "roleLabel": "I am",
+      "rolePlaceholder": "Select your role...",
+      "roles": {
+        "recruiter-headhunter": "Recruiter / Headhunter",
+        "potential-client": "Potential Client (Company)",
+        "consulting-partner": "Consulting Partner / Agency",
+        "investor-advisor": "Investor / Advisor",
+        "curious": "Curious Visitor",
+        "other": "Other"
+      },
+      "industryLabel": "Industry/Sector",
+      "industryPlaceholder": "Select your industry...",
+      "industries": {
+        "technology-saas": "Technology / SaaS",
+        "finance-banking": "Finance & Banking",
+        "insurance": "Insurance",
+        "manufacturing": "Manufacturing",
+        "healthcare-medical": "Healthcare & Medical Services",
+        "events-conference": "Events & Conference Tech",
+        "education-edtech": "Education / EdTech",
+        "environmental-agritech": "Environmental / Agriculture / Agritech",
+        "aviation-aerospace": "Aviation / Aerospace",
+        "ngo-social": "NGO / Social Impact",
+        "hospitality-etourism": "Hospitality / E-Tourism",
+        "ecommerce-retail": "E-Commerce / Retail",
+        "government-public": "Government / Public Sector",
+        "other": "Other"
+      },
+      "interestsLabel": "Primary Interests",
+      "interestsPlaceholder": "Select interests...",
+      "interests": {
+        "it-strategy": "IT Strategy & Leadership",
+        "cto-cpto-advisory": "CTO / CPTO Advisory",
+        "pmo": "Project Management Office (PMO)",
+        "digital-factory": "Digital Factory & Delivery Governance",
+        "saas-development": "SaaS Product Development",
+        "software-architecture": "Software Architecture & Modernization",
+        "offshoring-outsourcing": "Offshoring & Outsourcing Strategy",
+        "business-intelligence": "Business Intelligence & Data Platforms",
+        "ux-ui-product": "UX/UI & Product Discovery",
+        "interim-roles": "Interim CTO / PMO Roles",
+        "digital-transformation": "Digital Transformation",
+        "other": "Other"
+      },
+      "companySizeLabel": "Company Size (optional)",
+      "companySizePlaceholder": "Select company size",
+      "companySizes": {
+        "startup": "Startup (< 50 employees)",
+        "sme": "SME (50-500 employees)",
+        "enterprise": "Enterprise (500+ employees)"
+      },
+      "submitButton": "Start Chatting",
+      "requiredField": "This field is required",
+      "selectAtLeastOne": "Please select at least one interest",
+      "suggestedQuestionsTitle": "Suggested questions for you:",
+      "suggestedQuestions": {
+        "recruiter": [
+          "What types of interim roles can Baptiste fill?",
+          "What is his availability and engagement model?",
+          "Can you share his key achievements and track record?"
+        ],
+        "potential-client": [
+          "Tell me about the starter packages",
+          "How does the PMO setup work?",
+          "What's the typical engagement process?"
+        ],
+        "current-client": [
+          "How can we extend our current project scope?",
+          "What additional services are available?",
+          "Can we discuss new initiatives?"
+        ],
+        "partner": [
+          "How can we collaborate on projects?",
+          "What's Baptiste's offshore expertise?",
+          "What are the partnership opportunities?"
+        ],
+        "curious": [
+          "What makes Baptiste's approach unique?",
+          "Tell me about his international experience",
+          "What industries has he worked in?"
+        ],
+        "other": [
+          "What services does Baptiste offer?",
+          "Tell me about his expertise areas",
+          "How can Baptiste help my organization?"
+        ]
+      }
     }
   }

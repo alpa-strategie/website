@@ -72,8 +72,29 @@
 - Tools include: search, get_documentation, find_apis, check_deprecated_code
 - Successful integration enhances development workflow
 
-## Open Questions
-- None at this time
+## Current Session Focus
+**Date**: 2025-11-08
+
+### Primary Tasks
+1. Define and implement **Aïa**, the Alpa Intelligent Agent, as an AI-first UX layer.
+2. Connect Aïa to Notion-based knowledge for maintainable answers.
+3. Ensure fullscreen onboarding + persistent chat icon behavior.
+4. Keep classic navigation fully usable as an alternative path.
+
+## Recent Changes
+- Memory Bank structured and synced with project realities.
+- MCP servers (Sequential Thinking, Context7, Perplexity, Notion) configured for development support.
+
+## Active Patterns & Preferences
+- Mobile-first, minimalistic, executive UI.
+- Aïa must feel premium, not gimmicky.
+- All AI answers grounded in maintained content (Notion + site).
+
+## Next Steps
+1. Implement `/api/aia` route.
+2. Build `AiaLauncher`, `AiaModal`, `AiaChat` components.
+3. Wire context selector + suggested questions.
+4. Add localStorage flag to control first-time fullscreen behavior.
 
 ## Blockers
-- None at this time
+- None identified.
