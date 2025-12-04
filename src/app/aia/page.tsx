@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import { useRouter } from 'next/navigation';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { useLanguage, LanguageProvider } from '@/components/LanguageProvider';
 import translations from '@/app/translations';
@@ -17,6 +18,7 @@ interface Message {
 }
 
 const AiaPageContent = () => {
+  const router = useRouter();
   const { language } = useLanguage();
   const t = translations[language].aia;
   const tOnboarding = translations[language].onboarding;
@@ -122,12 +124,27 @@ const AiaPageContent = () => {
       if (!response.ok) throw new Error('Failed to get response');
 
       const data = await response.json();
+      
+      let cleanedAnswer = data.answer;
+      let shouldOpenScheduler = false;
+      
+      if (cleanedAnswer.includes('[[ACTION:OPEN_SCHEDULER]]')) {
+        cleanedAnswer = cleanedAnswer.replace('[[ACTION:OPEN_SCHEDULER]]', '').trim();
+        shouldOpenScheduler = true;
+      }
+      
       const assistantMessage: Message = { 
         role: 'assistant', 
-        content: data.answer,
+        content: cleanedAnswer,
         suggestedQuestions: data.suggestedQuestions || []
       };
       setMessages(prev => [...prev, assistantMessage]);
+      
+      if (shouldOpenScheduler) {
+        setTimeout(() => {
+          router.push('/book');
+        }, 1500);
+      }
     } catch (error) {
       console.error('Error sending message:', error);
       const errorMessage: Message = { role: 'assistant', content: t.error };
