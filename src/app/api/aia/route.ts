@@ -108,13 +108,35 @@ export async function POST(req: Request) {
     const messageArray = Array.isArray(messages) ? messages : [];
     console.log(`🟢 [AIA API] Messages in conversation: ${messageArray.length}`);
 
-    const lastUserMessage = messageArray[messageArray.length - 1]?.content || '';
+    const validMessages = messageArray.filter(msg => 
+      msg && 
+      msg.content && 
+      typeof msg.content === 'string' && 
+      msg.content.trim().length > 0
+    );
+    console.log(`🟢 [AIA API] Valid messages after filtering: ${validMessages.length}`);
+
+    const lastUserMessage = validMessages[validMessages.length - 1]?.content || '';
+    
+    if (!lastUserMessage) {
+      console.error('❌ [AIA API] No valid user message found');
+      return new Response(JSON.stringify({ 
+        error: 'No valid message content' 
+      }), { 
+        status: 400,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
     
     console.log('🔍 [AIA API] Performing semantic search for relevant content...');
     const knowledgeBase = await semanticSearch(lastUserMessage, {
       topK: 10
     });
     console.log(`✅ [AIA API] Found relevant context: ${knowledgeBase.length} characters`);
+    
+    if (!knowledgeBase || knowledgeBase.trim().length === 0) {
+      console.warn('⚠️ [AIA API] No content found in semantic search, using fallback');
+    }
 
     let profileContext = '';
     if (visitorProfile) {
@@ -299,7 +321,7 @@ Directives :
           role: 'system',
           content: systemPrompt,
         },
-        ...messageArray,
+        ...validMessages,
       ],
       temperature: 0.7,
       max_tokens: 1000,
