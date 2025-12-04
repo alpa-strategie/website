@@ -121,7 +121,7 @@ const AiaPageContent = () => {
       if (!response.ok) throw new Error('Failed to get response');
 
       const data = await response.json();
-      const assistantMessage: Message = { role: 'assistant', content: data.message };
+      const assistantMessage: Message = { role: 'assistant', content: data.answer };
       setMessages(prev => [...prev, assistantMessage]);
     } catch (error) {
       console.error('Error sending message:', error);
